@@ -1,0 +1,6688 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Tag: @smoke</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Karate_BookingAPITest</td>
+      <td>18 Apr 2024, 23:27</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Tag Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Tag</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">@smoke</td>
+          <td      class="passed"    >205</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">205</td>
+
+          <td  class="passed"    >6</td>
+          <td >0</td>
+          <td class="total">6</td>
+
+          <td class="duration" data-value="41775291600">41.775</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="elements">
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_326834713.html">BookingAPITestFeature/Test_Create_Booking_API.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_233058432.html">@regression</a>
+       <a href="report-tag_4089311534.html">@smoke</a>
+</div>
+
+
+  <span class="lead-duration duration">5.660</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Test Create Booking APId</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+          <div class="comment indention"># Creating User -----------------------------&gt;</div>
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path &quot;booking&quot;</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Content-Type = ContentType</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Accept = AcceptVar</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request createRequestPayload</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">5.611</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>23:26:54.041 request:
+1 &gt; POST https://restful-booker.herokuapp.com/booking
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Accept: application/json
+1 &gt; Content-Length: 183
+1 &gt; Host: restful-booker.herokuapp.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;firstname&quot;:&quot;Mazie&quot;,&quot;lastname&quot;:&quot;Schmitt&quot;,&quot;totalprice&quot;:&quot;8616&quot;,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2024-04-18&quot;,&quot;checkout&quot;:&quot;2024-04-19&quot;},&quot;additionalneeds&quot;:[&quot;Tea&quot;,&quot;BreakFast&quot;]}
+
+23:26:58.466 response time in milliseconds: 4423
+1 &lt; 200
+1 &lt; Server: Cowboy
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1713463018&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=Rk9mytpBMIiBWR0eJJr62hNTX%2FPARJVjfAkrkVdgDxA%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1713463018&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=Rk9mytpBMIiBWR0eJJr62hNTX%2FPARJVjfAkrkVdgDxA%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 210
+1 &lt; Etag: W/&quot;d2-0RwRM2pAyOPH9HHeV7alEq6aSXE&quot;
+1 &lt; Date: Thu, 18 Apr 2024 17:56:58 GMT
+1 &lt; Via: 1.1 vegur
+{&quot;bookingid&quot;:2987,&quot;booking&quot;:{&quot;firstname&quot;:&quot;Mazie&quot;,&quot;lastname&quot;:&quot;Schmitt&quot;,&quot;totalprice&quot;:8616,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2024-04-18&quot;,&quot;checkout&quot;:&quot;2024-04-19&quot;},&quot;additionalneeds&quot;:[&quot;Tea&quot;,&quot;BreakFast&quot;]}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def bookingid = $.bookingid</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match $.bookingid == &quot;#present&quot;</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def firstname = createRequestPayload.firstname</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def lastname = createRequestPayload.lastname</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def totalprice = parseInt(createRequestPayload.totalprice)</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def checkin = createRequestPayload.bookingdates.checkin</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def checkout = createRequestPayload.bookingdates.checkout</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def depositpaid = true</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def additionalneeds = [&quot;Tea&quot;, &quot;BreakFast&quot;]</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def expectedResponse = read('classpath:ResponsePays/CreateBookingResponse.json')</span>
+
+  <span class="lead-duration duration">0.013</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match $ == expectedResponse</span>
+
+  <span class="lead-duration duration">0.012</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1_1806815560.html">BookingAPITestFeature/Test_Delete_Booking_API.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_233058432.html">@regression</a>
+       <a href="report-tag_4089311534.html">@smoke</a>
+</div>
+
+
+  <span class="lead-duration duration">8.610</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Test Delete Booking API</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
+      <div class="step">
+          <div class="comment indention"># Creating User -----------------------------&gt;</div>
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path &quot;booking&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Content-Type = ContentType</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Accept = AcceptVar</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request createRequestPayload</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">1.846</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>23:26:58.426 request:
+1 &gt; POST https://restful-booker.herokuapp.com/booking
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Accept: application/json
+1 &gt; Content-Length: 184
+1 &gt; Host: restful-booker.herokuapp.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;firstname&quot;:&quot;Zona&quot;,&quot;lastname&quot;:&quot;Marquardt&quot;,&quot;totalprice&quot;:&quot;6390&quot;,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2024-04-18&quot;,&quot;checkout&quot;:&quot;2024-04-19&quot;},&quot;additionalneeds&quot;:[&quot;Tea&quot;,&quot;BreakFast&quot;]}
+
+23:27:00.269 response time in milliseconds: 1841
+1 &lt; 200
+1 &lt; Server: Cowboy
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1713463020&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=aEfrrwsapH5gbtQP2yisQtLBMJhWByebBDnhKW%2F%2BmRA%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1713463020&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=aEfrrwsapH5gbtQP2yisQtLBMJhWByebBDnhKW%2F%2BmRA%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 211
+1 &lt; Etag: W/&quot;d3-2MdEVRnC0ieRIyvRxoDr0rNhsYI&quot;
+1 &lt; Date: Thu, 18 Apr 2024 17:57:00 GMT
+1 &lt; Via: 1.1 vegur
+{&quot;bookingid&quot;:3008,&quot;booking&quot;:{&quot;firstname&quot;:&quot;Zona&quot;,&quot;lastname&quot;:&quot;Marquardt&quot;,&quot;totalprice&quot;:6390,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2024-04-18&quot;,&quot;checkout&quot;:&quot;2024-04-19&quot;},&quot;additionalneeds&quot;:[&quot;Tea&quot;,&quot;BreakFast&quot;]}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def bookingid = $.bookingid</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match $.bookingid == &quot;#present&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def firstname = createRequestPayload.firstname</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def lastname = createRequestPayload.lastname</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def totalprice = parseInt(createRequestPayload.totalprice)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def checkin = createRequestPayload.bookingdates.checkin</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def checkout = createRequestPayload.bookingdates.checkout</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def depositpaid = true</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def additionalneeds = [&quot;Tea&quot;, &quot;BreakFast&quot;]</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def expectedResponse = read('classpath:ResponsePays/CreateBookingResponse.json')</span>
+
+  <span class="lead-duration duration">0.008</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match $ == expectedResponse</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def bookingID = $.bookingid</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Retreving User -----------------------------&gt;</div>
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path &quot;booking/&quot; + bookingID</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Content-Type = ContentType</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Accept = AcceptVar</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">1.654</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>23:27:00.302 request:
+2 &gt; GET https://restful-booker.herokuapp.com/booking/3008
+2 &gt; Content-Type: application/json
+2 &gt; Accept: application/json
+2 &gt; Host: restful-booker.herokuapp.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+23:27:01.953 response time in milliseconds: 1650
+2 &lt; 200
+2 &lt; Server: Cowboy
+2 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1713463022&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=RX4ujJzHJIfbLPibpTAqdk9yd2a3OKOQEr2D4ykgqjk%3D&quot;}]}
+2 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1713463022&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=RX4ujJzHJIfbLPibpTAqdk9yd2a3OKOQEr2D4ykgqjk%3D
+2 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Content-Length: 182
+2 &lt; Etag: W/&quot;b6-dFLGqK9PdDWAK7Q8iVjzB6UpiM8&quot;
+2 &lt; Date: Thu, 18 Apr 2024 17:57:02 GMT
+2 &lt; Via: 1.1 vegur
+{&quot;firstname&quot;:&quot;Zona&quot;,&quot;lastname&quot;:&quot;Marquardt&quot;,&quot;totalprice&quot;:6390,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2024-04-18&quot;,&quot;checkout&quot;:&quot;2024-04-19&quot;},&quot;additionalneeds&quot;:[&quot;Tea&quot;,&quot;BreakFast&quot;]}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def firstname = createRequestPayload.firstname</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def lastname = createRequestPayload.lastname</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def totalprice = parseInt(createRequestPayload.totalprice)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def checkin = createRequestPayload.bookingdates.checkin</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def checkout = createRequestPayload.bookingdates.checkout</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def depositpaid = true</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def additionalneeds = [&quot;Tea&quot;, &quot;BreakFast&quot;]</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def expectedResponse = read('classpath:ResponsePays/GetBookingResponse.json')</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match $ == expectedResponse</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Deleting User -----------------------------&gt;</div>
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path &quot;booking/&quot; + bookingID</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Content-Type = ContentType</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Accept = &quot;text/plain; charset=utf-8&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Cookie = &quot;token=&quot; +accessToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method delete</span>
+
+  <span class="lead-duration duration">3.212</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>23:27:01.976 request:
+3 &gt; DELETE https://restful-booker.herokuapp.com/booking/3008
+3 &gt; Content-Type: application/json
+3 &gt; Accept: text/plain; charset=utf-8
+3 &gt; Cookie: token=d90ffdd26cc8823
+3 &gt; Host: restful-booker.herokuapp.com
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
+3 &gt; Accept-Encoding: gzip,deflate
+
+
+23:27:05.181 response time in milliseconds: 3200
+3 &lt; 201
+3 &lt; Server: Cowboy
+3 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1713463025&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=IMMsFFMV8NiUod08wQ2HzPXlZTaN5DY2pFJ61Y5UEU4%3D&quot;}]}
+3 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1713463025&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=IMMsFFMV8NiUod08wQ2HzPXlZTaN5DY2pFJ61Y5UEU4%3D
+3 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+3 &lt; Connection: keep-alive
+3 &lt; X-Powered-By: Express
+3 &lt; Content-Type: text/plain; charset=utf-8
+3 &lt; Content-Length: 7
+3 &lt; Etag: W/&quot;7-rM9AyJuqT6iOan/xHh+AW+7K/T8&quot;
+3 &lt; Date: Thu, 18 Apr 2024 17:57:05 GMT
+3 &lt; Via: 1.1 vegur
+Created
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>23:27:05.189 [print] Created 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match $ == &quot;Created&quot;</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Retreving Deleted User -----------------------------&gt;</div>
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path &quot;booking/&quot; + bookingID</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Content-Type = ContentType</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Accept = AcceptVar</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">1.832</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>23:27:05.216 request:
+4 &gt; GET https://restful-booker.herokuapp.com/booking/3008
+4 &gt; Content-Type: application/json
+4 &gt; Accept: application/json
+4 &gt; Host: restful-booker.herokuapp.com
+4 &gt; Connection: Keep-Alive
+4 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
+4 &gt; Accept-Encoding: gzip,deflate
+
+
+23:27:07.033 response time in milliseconds: 1815
+4 &lt; 404
+4 &lt; Server: Cowboy
+4 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1713463027&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=eLZUjsvdLjGaQw%2F2HsANtc1XzcAjHeLVPxio%2FxvkM1s%3D&quot;}]}
+4 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1713463027&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=eLZUjsvdLjGaQw%2F2HsANtc1XzcAjHeLVPxio%2FxvkM1s%3D
+4 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+4 &lt; Connection: keep-alive
+4 &lt; X-Powered-By: Express
+4 &lt; Content-Type: text/plain; charset=utf-8
+4 &lt; Content-Length: 9
+4 &lt; Etag: W/&quot;9-0gXL1ngzMqISxa6S1zx3F4wtLyg&quot;
+4 &lt; Date: Thu, 18 Apr 2024 17:57:07 GMT
+4 &lt; Via: 1.1 vegur
+Not Found
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 404</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-11">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-11" class="collapse collapsable-details">
+        <pre>23:27:07.037 [print] Not Found 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match $ == &quot;Not Found&quot;</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_2_332646225.html">BookingAPITestFeature/Test_Get_Booking_API.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_233058432.html">@regression</a>
+       <a href="report-tag_4089311534.html">@smoke</a>
+</div>
+
+
+  <span class="lead-duration duration">6.131</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-12">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Validate Get All Booking</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-12" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-13">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-13" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path &quot;booking&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Content-Type = ContentType</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">6.032</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-14" class="collapse collapsable-details">
+        <pre>23:26:54.041 request:
+1 &gt; GET https://restful-booker.herokuapp.com/booking
+1 &gt; Content-Type: application/json
+1 &gt; Host: restful-booker.herokuapp.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+23:26:58.897 response time in milliseconds: 4823
+1 &lt; 200
+1 &lt; Server: Cowboy
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1713463018&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=Rk9mytpBMIiBWR0eJJr62hNTX%2FPARJVjfAkrkVdgDxA%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1713463018&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=Rk9mytpBMIiBWR0eJJr62hNTX%2FPARJVjfAkrkVdgDxA%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 38295
+1 &lt; Etag: W/&quot;9597-z71hYtkNDh0XbEYtxdpn8HeXgHo&quot;
+1 &lt; Date: Thu, 18 Apr 2024 17:56:58 GMT
+1 &lt; Via: 1.1 vegur
+[{&quot;bookingid&quot;:2862},{&quot;bookingid&quot;:340},{&quot;bookingid&quot;:2791},{&quot;bookingid&quot;:2515},{&quot;bookingid&quot;:890},{&quot;bookingid&quot;:2571},{&quot;bookingid&quot;:2929},{&quot;bookingid&quot;:131},{&quot;bookingid&quot;:2090},{&quot;bookingid&quot;:24},{&quot;bookingid&quot;:1770},{&quot;bookingid&quot;:2507},{&quot;bookingid&quot;:101},{&quot;bookingid&quot;:827},{&quot;bookingid&quot;:2843},{&quot;bookingid&quot;:1079},{&quot;bookingid&quot;:2420},{&quot;bookingid&quot;:625},{&quot;bookingid&quot;:426},{&quot;bookingid&quot;:1400},{&quot;bookingid&quot;:1324},{&quot;bookingid&quot;:1328},{&quot;bookingid&quot;:2969},{&quot;bookingid&quot;:2981},{&quot;bookingid&quot;:2244},{&quot;bookingid&quot;:928},{&quot;bookingid&quot;:44},{&quot;bookingid&quot;:2006},{&quot;bookingid&quot;:47},{&quot;bookingid&quot;:670},{&quot;bookingid&quot;:1075},{&quot;bookingid&quot;:1161},{&quot;bookingid&quot;:2616},{&quot;bookingid&quot;:1887},{&quot;bookingid&quot;:791},{&quot;bookingid&quot;:2684},{&quot;bookingid&quot;:89},{&quot;bookingid&quot;:2664},{&quot;bookingid&quot;:683},{&quot;bookingid&quot;:312},{&quot;bookingid&quot;:2347},{&quot;bookingid&quot;:666},{&quot;bookingid&quot;:2518},{&quot;bookingid&quot;:1078},{&quot;bookingid&quot;:268},{&quot;bookingid&quot;:1590},{&quot;bookingid&quot;:2646},{&quot;bookingid&quot;:732},{&quot;bookingid&quot;:1592},{&quot;bookingid&quot;:514},{&quot;bookingid&quot;:1205},{&quot;bookingid&quot;:2406},{&quot;bookingid&quot;:1569},{&quot;bookingid&quot;:2763},{&quot;bookingid&quot;:2661},{&quot;bookingid&quot;:2984},{&quot;bookingid&quot;:2668},{&quot;bookingid&quot;:330},{&quot;bookingid&quot;:595},{&quot;bookingid&quot;:1635},{&quot;bookingid&quot;:1240},{&quot;bookingid&quot;:2797},{&quot;bookingid&quot;:2845},{&quot;bookingid&quot;:449},{&quot;bookingid&quot;:868},{&quot;bookingid&quot;:2423},{&quot;bookingid&quot;:1703},{&quot;bookingid&quot;:1878},{&quot;bookingid&quot;:528},{&quot;bookingid&quot;:2491},{&quot;bookingid&quot;:2366},{&quot;bookingid&quot;:2365},{&quot;bookingid&quot;:2253},{&quot;bookingid&quot;:1057},{&quot;bookingid&quot;:1020},{&quot;bookingid&quot;:1757},{&quot;bookingid&quot;:1697},{&quot;bookingid&quot;:2495},{&quot;bookingid&quot;:2961},{&quot;bookingid&quot;:316},{&quot;bookingid&quot;:1834},{&quot;bookingid&quot;:828},{&quot;bookingid&quot;:1594},{&quot;bookingid&quot;:1996},{&quot;bookingid&quot;:1705},{&quot;bookingid&quot;:2872},{&quot;bookingid&quot;:607},{&quot;bookingid&quot;:112},{&quot;bookingid&quot;:1595},{&quot;bookingid&quot;:778},{&quot;bookingid&quot;:1333},{&quot;bookingid&quot;:545},{&quot;bookingid&quot;:1915},{&quot;bookingid&quot;:2927},{&quot;bookingid&quot;:2760},{&quot;bookingid&quot;:1572},{&quot;bookingid&quot;:1973},{&quot;bookingid&quot;:2161},{&quot;bookingid&quot;:679},{&quot;bookingid&quot;:2745},{&quot;bookingid&quot;:1511},{&quot;bookingid&quot;:2788},{&quot;bookingid&quot;:2458},{&quot;bookingid&quot;:2302},{&quot;bookingid&quot;:285},{&quot;bookingid&quot;:2052},{&quot;bookingid&quot;:634},{&quot;bookingid&quot;:2675},{&quot;bookingid&quot;:2204},{&quot;bookingid&quot;:1418},{&quot;bookingid&quot;:479},{&quot;bookingid&quot;:1204},{&quot;bookingid&quot;:2831},{&quot;bookingid&quot;:1449},{&quot;bookingid&quot;:540},{&quot;bookingid&quot;:2752},{&quot;bookingid&quot;:224},{&quot;bookingid&quot;:2410},{&quot;bookingid&quot;:805},{&quot;bookingid&quot;:1433},{&quot;bookingid&quot;:1893},{&quot;bookingid&quot;:1655},{&quot;bookingid&quot;:2689},{&quot;bookingid&quot;:2508},{&quot;bookingid&quot;:993},{&quot;bookingid&quot;:1115},{&quot;bookingid&quot;:315},{&quot;bookingid&quot;:2555},{&quot;bookingid&quot;:937},{&quot;bookingid&quot;:1186},{&quot;bookingid&quot;:2008},{&quot;bookingid&quot;:905},{&quot;bookingid&quot;:218},{&quot;bookingid&quot;:741},{&quot;bookingid&quot;:2588},{&quot;bookingid&quot;:633},{&quot;bookingid&quot;:1966},{&quot;bookingid&quot;:1181},{&quot;bookingid&quot;:2435},{&quot;bookingid&quot;:2313},{&quot;bookingid&quot;:2757},{&quot;bookingid&quot;:1641},{&quot;bookingid&quot;:2736},{&quot;bookingid&quot;:665},{&quot;bookingid&quot;:1795},{&quot;bookingid&quot;:1156},{&quot;bookingid&quot;:97},{&quot;bookingid&quot;:695},{&quot;bookingid&quot;:830},{&quot;bookingid&quot;:2880},{&quot;bookingid&quot;:2472},{&quot;bookingid&quot;:860},{&quot;bookingid&quot;:2075},{&quot;bookingid&quot;:397},{&quot;bookingid&quot;:2238},{&quot;bookingid&quot;:2476},{&quot;bookingid&quot;:1713},{&quot;bookingid&quot;:5},{&quot;bookingid&quot;:759},{&quot;bookingid&quot;:1677},{&quot;bookingid&quot;:915},{&quot;bookingid&quot;:779},{&quot;bookingid&quot;:2218},{&quot;bookingid&quot;:851},{&quot;bookingid&quot;:2200},{&quot;bookingid&quot;:1000},{&quot;bookingid&quot;:713},{&quot;bookingid&quot;:1173},{&quot;bookingid&quot;:1546},{&quot;bookingid&quot;:2612},{&quot;bookingid&quot;:425},{&quot;bookingid&quot;:303},{&quot;bookingid&quot;:1268},{&quot;bookingid&quot;:820},{&quot;bookingid&quot;:810},{&quot;bookingid&quot;:1152},{&quot;bookingid&quot;:2114},{&quot;bookingid&quot;:1451},{&quot;bookingid&quot;:1957},{&quot;bookingid&quot;:1557},{&quot;bookingid&quot;:1830},{&quot;bookingid&quot;:370},{&quot;bookingid&quot;:324},{&quot;bookingid&quot;:2111},{&quot;bookingid&quot;:1662},{&quot;bookingid&quot;:2944},{&quot;bookingid&quot;:1542},{&quot;bookingid&quot;:1928},{&quot;bookingid&quot;:455},{&quot;bookingid&quot;:1081},{&quot;bookingid&quot;:1724},{&quot;bookingid&quot;:1469},{&quot;bookingid&quot;:2078},{&quot;bookingid&quot;:1429},{&quot;bookingid&quot;:537},{&quot;bookingid&quot;:1739},{&quot;bookingid&quot;:2396},{&quot;bookingid&quot;:1234},{&quot;bookingid&quot;:84},{&quot;bookingid&quot;:203},{&quot;bookingid&quot;:2209},{&quot;bookingid&quot;:2335},{&quot;bookingid&quot;:2223},{&quot;bookingid&quot;:1694},{&quot;bookingid&quot;:2233},{&quot;bookingid&quot;:2386},{&quot;bookingid&quot;:13},{&quot;bookingid&quot;:760},{&quot;bookingid&quot;:1789},{&quot;bookingid&quot;:2326},{&quot;bookingid&quot;:2272},{&quot;bookingid&quot;:2716},{&quot;bookingid&quot;:1337},{&quot;bookingid&quot;:526},{&quot;bookingid&quot;:784},{&quot;bookingid&quot;:1159},{&quot;bookingid&quot;:1584},{&quot;bookingid&quot;:385},{&quot;bookingid&quot;:1385},{&quot;bookingid&quot;:2011},{&quot;bookingid&quot;:485},{&quot;bookingid&quot;:135},{&quot;bookingid&quot;:2510},{&quot;bookingid&quot;:398},{&quot;bookingid&quot;:557},{&quot;bookingid&quot;:967},{&quot;bookingid&quot;:647},{&quot;bookingid&quot;:1541},{&quot;bookingid&quot;:2666},{&quot;bookingid&quot;:429},{&quot;bookingid&quot;:2004},{&quot;bookingid&quot;:258},{&quot;bookingid&quot;:544},{&quot;bookingid&quot;:2644},{&quot;bookingid&quot;:2871},{&quot;bookingid&quot;:2645},{&quot;bookingid&quot;:1695},{&quot;bookingid&quot;:737},{&quot;bookingid&quot;:259},{&quot;bookingid&quot;:2485},{&quot;bookingid&quot;:556},{&quot;bookingid&quot;:1942},{&quot;bookingid&quot;:1168},{&quot;bookingid&quot;:2362},{&quot;bookingid&quot;:1151},{&quot;bookingid&quot;:747},{&quot;bookingid&quot;:2679},{&quot;bookingid&quot;:985},{&quot;bookingid&quot;:1749},{&quot;bookingid&quot;:2936},{&quot;bookingid&quot;:2902},{&quot;bookingid&quot;:2250},{&quot;bookingid&quot;:288},{&quot;bookingid&quot;:1297},{&quot;bookingid&quot;:2214},{&quot;bookingid&quot;:579},{&quot;bookingid&quot;:376},{&quot;bookingid&quot;:743},{&quot;bookingid&quot;:55},{&quot;bookingid&quot;:569},{&quot;bookingid&quot;:155},{&quot;bookingid&quot;:1515},{&quot;bookingid&quot;:1023},{&quot;bookingid&quot;:486},{&quot;bookingid&quot;:2190},{&quot;bookingid&quot;:2595},{&quot;bookingid&quot;:1087},{&quot;bookingid&quot;:223},{&quot;bookingid&quot;:2483},{&quot;bookingid&quot;:1319},{&quot;bookingid&quot;:1602},{&quot;bookingid&quot;:1244},{&quot;bookingid&quot;:2863},{&quot;bookingid&quot;:1343},{&quot;bookingid&quot;:1888},{&quot;bookingid&quot;:1997},{&quot;bookingid&quot;:2924},{&quot;bookingid&quot;:2069},{&quot;bookingid&quot;:391},{&quot;bookingid&quot;:1406},{&quot;bookingid&quot;:2698},{&quot;bookingid&quot;:99},{&quot;bookingid&quot;:98},{&quot;bookingid&quot;:2531},{&quot;bookingid&quot;:2367},{&quot;bookingid&quot;:2764},{&quot;bookingid&quot;:2650},{&quot;bookingid&quot;:31},{&quot;bookingid&quot;:1180},{&quot;bookingid&quot;:593},{&quot;bookingid&quot;:1565},{&quot;bookingid&quot;:442},{&quot;bookingid&quot;:524},{&quot;bookingid&quot;:995},{&quot;bookingid&quot;:492},{&quot;bookingid&quot;:723},{&quot;bookingid&quot;:1907},{&quot;bookingid&quot;:2565},{&quot;bookingid&quot;:1678},{&quot;bookingid&quot;:750},{&quot;bookingid&quot;:1544},{&quot;bookingid&quot;:873},{&quot;bookingid&quot;:172},{&quot;bookingid&quot;:412},{&quot;bookingid&quot;:1527},{&quot;bookingid&quot;:226},{&quot;bookingid&quot;:2891},{&quot;bookingid&quot;:1935},{&quot;bookingid&quot;:2021},{&quot;bookingid&quot;:2318},{&quot;bookingid&quot;:491},{&quot;bookingid&quot;:2731},{&quot;bookingid&quot;:2124},{&quot;bookingid&quot;:431},{&quot;bookingid&quot;:724},{&quot;bookingid&quot;:1640},{&quot;bookingid&quot;:2498},{&quot;bookingid&quot;:1104},{&quot;bookingid&quot;:1369},{&quot;bookingid&quot;:1890},{&quot;bookingid&quot;:1118},{&quot;bookingid&quot;:465},{&quot;bookingid&quot;:1417},{&quot;bookingid&quot;:256},{&quot;bookingid&quot;:1307},{&quot;bookingid&quot;:2036},{&quot;bookingid&quot;:125},{&quot;bookingid&quot;:2340},{&quot;bookingid&quot;:2511},{&quot;bookingid&quot;:637},{&quot;bookingid&quot;:1786},{&quot;bookingid&quot;:660},{&quot;bookingid&quot;:1362},{&quot;bookingid&quot;:2734},{&quot;bookingid&quot;:1066},{&quot;bookingid&quot;:11},{&quot;bookingid&quot;:2881},{&quot;bookingid&quot;:1758},{&quot;bookingid&quot;:1178},{&quot;bookingid&quot;:2176},{&quot;bookingid&quot;:2653},{&quot;bookingid&quot;:132},{&quot;bookingid&quot;:1895},{&quot;bookingid&quot;:2175},{&quot;bookingid&quot;:471},{&quot;bookingid&quot;:53},{&quot;bookingid&quot;:2671},{&quot;bookingid&quot;:114},{&quot;bookingid&quot;:2059},{&quot;bookingid&quot;:707},{&quot;bookingid&quot;:1448},{&quot;bookingid&quot;:1670},{&quot;bookingid&quot;:477},{&quot;bookingid&quot;:54},{&quot;bookingid&quot;:1193},{&quot;bookingid&quot;:1093},{&quot;bookingid&quot;:1194},{&quot;bookingid&quot;:1534},{&quot;bookingid&quot;:2626},{&quot;bookingid&quot;:705},{&quot;bookingid&quot;:659},{&quot;bookingid&quot;:1885},{&quot;bookingid&quot;:782},{&quot;bookingid&quot;:1817},{&quot;bookingid&quot;:408},{&quot;bookingid&quot;:1908},{&quot;bookingid&quot;:2033},{&quot;bookingid&quot;:2617},{&quot;bookingid&quot;:1593},{&quot;bookingid&quot;:2629},{&quot;bookingid&quot;:2400},{&quot;bookingid&quot;:1859},{&quot;bookingid&quot;:2677},{&quot;bookingid&quot;:211},{&quot;bookingid&quot;:1745},{&quot;bookingid&quot;:684},{&quot;bookingid&quot;:618},{&quot;bookingid&quot;:1443},{&quot;bookingid&quot;:1022},{&quot;bookingid&quot;:1124},{&quot;bookingid&quot;:894},{&quot;bookingid&quot;:402},{&quot;bookingid&quot;:1270},{&quot;bookingid&quot;:736},{&quot;bookingid&quot;:404},{&quot;bookingid&quot;:69},{&quot;bookingid&quot;:1074},{&quot;bookingid&quot;:1109},{&quot;bookingid&quot;:1376},{&quot;bookingid&quot;:2126},{&quot;bookingid&quot;:2812},{&quot;bookingid&quot;:2748},{&quot;bookingid&quot;:1723},{&quot;bookingid&quot;:1983},{&quot;bookingid&quot;:2149},{&quot;bookingid&quot;:204},{&quot;bookingid&quot;:2207},{&quot;bookingid&quot;:2809},{&quot;bookingid&quot;:17},{&quot;bookingid&quot;:2959},{&quot;bookingid&quot;:554},{&quot;bookingid&quot;:1490},{&quot;bookingid&quot;:454},{&quot;bookingid&quot;:1835},{&quot;bookingid&quot;:953},{&quot;bookingid&quot;:2334},{&quot;bookingid&quot;:1943},{&quot;bookingid&quot;:2632},{&quot;bookingid&quot;:2434},{&quot;bookingid&quot;:2216},{&quot;bookingid&quot;:2971},{&quot;bookingid&quot;:2072},{&quot;bookingid&quot;:2109},{&quot;bookingid&quot;:2076},{&quot;bookingid&quot;:95},{&quot;bookingid&quot;:2931},{&quot;bookingid&quot;:1136},{&quot;bookingid&quot;:584},{&quot;bookingid&quot;:655},{&quot;bookingid&quot;:1368},{&quot;bookingid&quot;:28},{&quot;bookingid&quot;:2680},{&quot;bookingid&quot;:1463},{&quot;bookingid&quot;:2687},{&quot;bookingid&quot;:2864},{&quot;bookingid&quot;:1782},{&quot;bookingid&quot;:2300},{&quot;bookingid&quot;:1479},{&quot;bookingid&quot;:225},{&quot;bookingid&quot;:2017},{&quot;bookingid&quot;:2950},{&quot;bookingid&quot;:2449},{&quot;bookingid&quot;:1781},{&quot;bookingid&quot;:2056},{&quot;bookingid&quot;:1979},{&quot;bookingid&quot;:1065},{&quot;bookingid&quot;:1798},{&quot;bookingid&quot;:836},{&quot;bookingid&quot;:230},{&quot;bookingid&quot;:1084},{&quot;bookingid&quot;:1256},{&quot;bookingid&quot;:1545},{&quot;bookingid&quot;:1249},{&quot;bookingid&quot;:2291},{&quot;bookingid&quot;:2842},{&quot;bookingid&quot;:2417},{&quot;bookingid&quot;:2208},{&quot;bookingid&quot;:1254},{&quot;bookingid&quot;:1601},{&quot;bookingid&quot;:612},{&quot;bookingid&quot;:930},{&quot;bookingid&quot;:955},{&quot;bookingid&quot;:161},{&quot;bookingid&quot;:2789},{&quot;bookingid&quot;:999},{&quot;bookingid&quot;:2904},{&quot;bookingid&quot;:2784},{&quot;bookingid&quot;:1455},{&quot;bookingid&quot;:83},{&quot;bookingid&quot;:1972},{&quot;bookingid&quot;:777},{&quot;bookingid&quot;:2307},{&quot;bookingid&quot;:2852},{&quot;bookingid&quot;:1875},{&quot;bookingid&quot;:2913},{&quot;bookingid&quot;:388},{&quot;bookingid&quot;:1287},{&quot;bookingid&quot;:126},{&quot;bookingid&quot;:307},{&quot;bookingid&quot;:1475},{&quot;bookingid&quot;:2912},{&quot;bookingid&quot;:2404},{&quot;bookingid&quot;:1733},{&quot;bookingid&quot;:2054},{&quot;bookingid&quot;:2542},{&quot;bookingid&quot;:1401},{&quot;bookingid&quot;:1388},{&quot;bookingid&quot;:123},{&quot;bookingid&quot;:2160},{&quot;bookingid&quot;:845},{&quot;bookingid&quot;:1857},{&quot;bookingid&quot;:1717},{&quot;bookingid&quot;:792},{&quot;bookingid&quot;:1809},{&quot;bookingid&quot;:2610},{&quot;bookingid&quot;:308},{&quot;bookingid&quot;:2373},{&quot;bookingid&quot;:407},{&quot;bookingid&quot;:2663},{&quot;bookingid&quot;:70},{&quot;bookingid&quot;:1466},{&quot;bookingid&quot;:2559},{&quot;bookingid&quot;:2105},{&quot;bookingid&quot;:1083},{&quot;bookingid&quot;:1427},{&quot;bookingid&quot;:1051},{&quot;bookingid&quot;:1647},{&quot;bookingid&quot;:2151},{&quot;bookingid&quot;:1621},{&quot;bookingid&quot;:424},{&quot;bookingid&quot;:753},{&quot;bookingid&quot;:663},{&quot;bookingid&quot;:2952},{&quot;bookingid&quot;:1762},{&quot;bookingid&quot;:898},{&quot;bookingid&quot;:1806},{&quot;bookingid&quot;:1562},{&quot;bookingid&quot;:1251},{&quot;bookingid&quot;:658},{&quot;bookingid&quot;:248},{&quot;bookingid&quot;:202},{&quot;bookingid&quot;:2499},{&quot;bookingid&quot;:64},{&quot;bookingid&quot;:48},{&quot;bookingid&quot;:1148},{&quot;bookingid&quot;:694},{&quot;bookingid&quot;:2083},{&quot;bookingid&quot;:2243},{&quot;bookingid&quot;:1969},{&quot;bookingid&quot;:2749},{&quot;bookingid&quot;:2670},{&quot;bookingid&quot;:1768},{&quot;bookingid&quot;:2775},{&quot;bookingid&quot;:1716},{&quot;bookingid&quot;:2262},{&quot;bookingid&quot;:568},{&quot;bookingid&quot;:2642},{&quot;bookingid&quot;:916},{&quot;bookingid&quot;:1673},{&quot;bookingid&quot;:1485},{&quot;bookingid&quot;:144},{&quot;bookingid&quot;:2100},{&quot;bookingid&quot;:2399},{&quot;bookingid&quot;:2407},{&quot;bookingid&quot;:1848},{&quot;bookingid&quot;:188},{&quot;bookingid&quot;:1974},{&quot;bookingid&quot;:1473},{&quot;bookingid&quot;:1121},{&quot;bookingid&quot;:839},{&quot;bookingid&quot;:818},{&quot;bookingid&quot;:1756},{&quot;bookingid&quot;:2519},{&quot;bookingid&quot;:2024},{&quot;bookingid&quot;:168},{&quot;bookingid&quot;:2102},{&quot;bookingid&quot;:2115},{&quot;bookingid&quot;:41},{&quot;bookingid&quot;:2064},{&quot;bookingid&quot;:2732},{&quot;bookingid&quot;:862},{&quot;bookingid&quot;:2002},{&quot;bookingid&quot;:1691},{&quot;bookingid&quot;:2378},{&quot;bookingid&quot;:93},{&quot;bookingid&quot;:2823},{&quot;bookingid&quot;:1382},{&quot;bookingid&quot;:703},{&quot;bookingid&quot;:1563},{&quot;bookingid&quot;:39},{&quot;bookingid&quot;:1374},{&quot;bookingid&quot;:1122},{&quot;bookingid&quot;:1764},{&quot;bookingid&quot;:2901},{&quot;bookingid&quot;:1177},{&quot;bookingid&quot;:2799},{&quot;bookingid&quot;:406},{&quot;bookingid&quot;:1639},{&quot;bookingid&quot;:1223},{&quot;bookingid&quot;:2897},{&quot;bookingid&quot;:2735},{&quot;bookingid&quot;:1684},{&quot;bookingid&quot;:963},{&quot;bookingid&quot;:2721},{&quot;bookingid&quot;:1182},{&quot;bookingid&quot;:2665},{&quot;bookingid&quot;:746},{&quot;bookingid&quot;:52},{&quot;bookingid&quot;:2082},{&quot;bookingid&quot;:1773},{&quot;bookingid&quot;:2294},{&quot;bookingid&quot;:10},{&quot;bookingid&quot;:2970},{&quot;bookingid&quot;:1200},{&quot;bookingid&quot;:2578},{&quot;bookingid&quot;:2742},{&quot;bookingid&quot;:804},{&quot;bookingid&quot;:1978},{&quot;bookingid&quot;:1938},{&quot;bookingid&quot;:2536},{&quot;bookingid&quot;:1347},{&quot;bookingid&quot;:938},{&quot;bookingid&quot;:7},{&quot;bookingid&quot;:1500},{&quot;bookingid&quot;:1851},{&quot;bookingid&quot;:599},{&quot;bookingid&quot;:621},{&quot;bookingid&quot;:1814},{&quot;bookingid&quot;:1958},{&quot;bookingid&quot;:2408},{&quot;bookingid&quot;:2930},{&quot;bookingid&quot;:1011},{&quot;bookingid&quot;:241},{&quot;bookingid&quot;:968},{&quot;bookingid&quot;:189},{&quot;bookingid&quot;:874},{&quot;bookingid&quot;:1231},{&quot;bookingid&quot;:2042},{&quot;bookingid&quot;:1245},{&quot;bookingid&quot;:2164},{&quot;bookingid&quot;:1931},{&quot;bookingid&quot;:2857},{&quot;bookingid&quot;:522},{&quot;bookingid&quot;:2849},{&quot;bookingid&quot;:1331},{&quot;bookingid&quot;:2844},{&quot;bookingid&quot;:631},{&quot;bookingid&quot;:1068},{&quot;bookingid&quot;:1559},{&quot;bookingid&quot;:152},{&quot;bookingid&quot;:1005},{&quot;bookingid&quot;:206},{&quot;bookingid&quot;:982},{&quot;bookingid&quot;:2740},{&quot;bookingid&quot;:469},{&quot;bookingid&quot;:710},{&quot;bookingid&quot;:450},{&quot;bookingid&quot;:448},{&quot;bookingid&quot;:1822},{&quot;bookingid&quot;:2374},{&quot;bookingid&quot;:2261},{&quot;bookingid&quot;:1108},{&quot;bookingid&quot;:2655},{&quot;bookingid&quot;:275},{&quot;bookingid&quot;:1301},{&quot;bookingid&quot;:2341},{&quot;bookingid&quot;:2293},{&quot;bookingid&quot;:323},{&quot;bookingid&quot;:2657},{&quot;bookingid&quot;:399},{&quot;bookingid&quot;:252},{&quot;bookingid&quot;:32},{&quot;bookingid&quot;:1335},{&quot;bookingid&quot;:2824},{&quot;bookingid&quot;:79},{&quot;bookingid&quot;:1235},{&quot;bookingid&quot;:368},{&quot;bookingid&quot;:1600},{&quot;bookingid&quot;:1199},{&quot;bookingid&quot;:740},{&quot;bookingid&quot;:1356},{&quot;bookingid&quot;:266},{&quot;bookingid&quot;:2772},{&quot;bookingid&quot;:373},{&quot;bookingid&quot;:2279},{&quot;bookingid&quot;:2838},{&quot;bookingid&quot;:2856},{&quot;bookingid&quot;:527},{&quot;bookingid&quot;:2861},{&quot;bookingid&quot;:948},{&quot;bookingid&quot;:2690},{&quot;bookingid&quot;:1872},{&quot;bookingid&quot;:822},{&quot;bookingid&quot;:2274},{&quot;bookingid&quot;:2946},{&quot;bookingid&quot;:650},{&quot;bookingid&quot;:2298},{&quot;bookingid&quot;:2308},{&quot;bookingid&quot;:2016},{&quot;bookingid&quot;:751},{&quot;bookingid&quot;:174},{&quot;bookingid&quot;:2460},{&quot;bookingid&quot;:946},{&quot;bookingid&quot;:2342},{&quot;bookingid&quot;:2937},{&quot;bookingid&quot;:2828},{&quot;bookingid&quot;:586},{&quot;bookingid&quot;:8},{&quot;bookingid&quot;:2810},{&quot;bookingid&quot;:1439},{&quot;bookingid&quot;:1858},{&quot;bookingid&quot;:2462},{&quot;bookingid&quot;:473},{&quot;bookingid&quot;:1402},{&quot;bookingid&quot;:2177},{&quot;bookingid&quot;:2890},{&quot;bookingid&quot;:863},{&quot;bookingid&quot;:1897},{&quot;bookingid&quot;:1477},{&quot;bookingid&quot;:565},{&quot;bookingid&quot;:335},{&quot;bookingid&quot;:2548},{&quot;bookingid&quot;:870},{&quot;bookingid&quot;:366},{&quot;bookingid&quot;:19},{&quot;bookingid&quot;:509},{&quot;bookingid&quot;:227},{&quot;bookingid&quot;:245},{&quot;bookingid&quot;:2558},{&quot;bookingid&quot;:2676},{&quot;bookingid&quot;:2557},{&quot;bookingid&quot;:1846},{&quot;bookingid&quot;:1202},{&quot;bookingid&quot;:2257},{&quot;bookingid&quot;:1807},{&quot;bookingid&quot;:210},{&quot;bookingid&quot;:2958},{&quot;bookingid&quot;:2583},{&quot;bookingid&quot;:105},{&quot;bookingid&quot;:577},{&quot;bookingid&quot;:1775},{&quot;bookingid&quot;:1625},{&quot;bookingid&quot;:2003},{&quot;bookingid&quot;:518},{&quot;bookingid&quot;:1314},{&quot;bookingid&quot;:2187},{&quot;bookingid&quot;:1280},{&quot;bookingid&quot;:2652},{&quot;bookingid&quot;:2256},{&quot;bookingid&quot;:71},{&quot;bookingid&quot;:1454},{&quot;bookingid&quot;:2028},{&quot;bookingid&quot;:1302},{&quot;bookingid&quot;:311},{&quot;bookingid&quot;:2501},{&quot;bookingid&quot;:578},{&quot;bookingid&quot;:785},{&quot;bookingid&quot;:476},{&quot;bookingid&quot;:1003},{&quot;bookingid&quot;:2088},{&quot;bookingid&quot;:1232},{&quot;bookingid&quot;:1063},{&quot;bookingid&quot;:1535},{&quot;bookingid&quot;:2911},{&quot;bookingid&quot;:2817},{&quot;bookingid&quot;:910},{&quot;bookingid&quot;:2600},{&quot;bookingid&quot;:2602},{&quot;bookingid&quot;:689},{&quot;bookingid&quot;:447},{&quot;bookingid&quot;:1701},{&quot;bookingid&quot;:532},{&quot;bookingid&quot;:2914},{&quot;bookingid&quot;:1069},{&quot;bookingid&quot;:1062},{&quot;bookingid&quot;:966},{&quot;bookingid&quot;:1471},{&quot;bookingid&quot;:2830},{&quot;bookingid&quot;:2803},{&quot;bookingid&quot;:1939},{&quot;bookingid&quot;:508},{&quot;bookingid&quot;:511},{&quot;bookingid&quot;:1286},{&quot;bookingid&quot;:1088},{&quot;bookingid&quot;:393},{&quot;bookingid&quot;:986},{&quot;bookingid&quot;:1659},{&quot;bookingid&quot;:1171},{&quot;bookingid&quot;:1718},{&quot;bookingid&quot;:75},{&quot;bookingid&quot;:2413},{&quot;bookingid&quot;:2873},{&quot;bookingid&quot;:1523},{&quot;bookingid&quot;:1139},{&quot;bookingid&quot;:903},{&quot;bookingid&quot;:1486},{&quot;bookingid&quot;:1095},{&quot;bookingid&quot;:2811},{&quot;bookingid&quot;:1239},{&quot;bookingid&quot;:396},{&quot;bookingid&quot;:979},{&quot;bookingid&quot;:1317},{&quot;bookingid&quot;:2631},{&quot;bookingid&quot;:643},{&quot;bookingid&quot;:1413},{&quot;bookingid&quot;:378},{&quot;bookingid&quot;:2719},{&quot;bookingid&quot;:1192},{&quot;bookingid&quot;:867},{&quot;bookingid&quot;:1054},{&quot;bookingid&quot;:1816},{&quot;bookingid&quot;:2437},{&quot;bookingid&quot;:1681},{&quot;bookingid&quot;:2292},{&quot;bookingid&quot;:1296},{&quot;bookingid&quot;:1671},{&quot;bookingid&quot;:2860},{&quot;bookingid&quot;:2354},{&quot;bookingid&quot;:1629},{&quot;bookingid&quot;:2813},{&quot;bookingid&quot;:1086},{&quot;bookingid&quot;:1839},{&quot;bookingid&quot;:2183},{&quot;bookingid&quot;:2943},{&quot;bookingid&quot;:597},{&quot;bookingid&quot;:2467},{&quot;bookingid&quot;:2453},{&quot;bookingid&quot;:186},{&quot;bookingid&quot;:183},{&quot;bookingid&quot;:1304},{&quot;bookingid&quot;:498},{&quot;bookingid&quot;:2898},{&quot;bookingid&quot;:1415},{&quot;bookingid&quot;:1216},{&quot;bookingid&quot;:503},{&quot;bookingid&quot;:1316},{&quot;bookingid&quot;:1899},{&quot;bookingid&quot;:2424},{&quot;bookingid&quot;:2728},{&quot;bookingid&quot;:1975},{&quot;bookingid&quot;:2127},{&quot;bookingid&quot;:2452},{&quot;bookingid&quot;:339},{&quot;bookingid&quot;:1950},{&quot;bookingid&quot;:2512},{&quot;bookingid&quot;:2226},{&quot;bookingid&quot;:246},{&quot;bookingid&quot;:2009},{&quot;bookingid&quot;:2598},{&quot;bookingid&quot;:2210},{&quot;bookingid&quot;:2601},{&quot;bookingid&quot;:1252},{&quot;bookingid&quot;:251},{&quot;bookingid&quot;:2591},{&quot;bookingid&quot;:2394},{&quot;bookingid&quot;:2029},{&quot;bookingid&quot;:2594},{&quot;bookingid&quot;:617},{&quot;bookingid&quot;:1746},{&quot;bookingid&quot;:2217},{&quot;bookingid&quot;:2063},{&quot;bookingid&quot;:1999},{&quot;bookingid&quot;:2416},{&quot;bookingid&quot;:352},{&quot;bookingid&quot;:942},{&quot;bookingid&quot;:1913},{&quot;bookingid&quot;:1833},{&quot;bookingid&quot;:346},{&quot;bookingid&quot;:853},{&quot;bookingid&quot;:350},{&quot;bookingid&quot;:1412},{&quot;bookingid&quot;:719},{&quot;bookingid&quot;:1912},{&quot;bookingid&quot;:2781},{&quot;bookingid&quot;:2714},{&quot;bookingid&quot;:2549},{&quot;bookingid&quot;:2174},{&quot;bookingid&quot;:2332},{&quot;bookingid&quot;:519},{&quot;bookingid&quot;:364},{&quot;bookingid&quot;:63},{&quot;bookingid&quot;:991},{&quot;bookingid&quot;:1155},{&quot;bookingid&quot;:1361},{&quot;bookingid&quot;:1390},{&quot;bookingid&quot;:297},{&quot;bookingid&quot;:797},{&quot;bookingid&quot;:1524},{&quot;bookingid&quot;:1196},{&quot;bookingid&quot;:2288},{&quot;bookingid&quot;:1954},{&quot;bookingid&quot;:2866},{&quot;bookingid&quot;:1666},{&quot;bookingid&quot;:1365},{&quot;bookingid&quot;:1862},{&quot;bookingid&quot;:2405},{&quot;bookingid&quot;:752},{&quot;bookingid&quot;:992},{&quot;bookingid&quot;:980},{&quot;bookingid&quot;:494},{&quot;bookingid&quot;:1783},{&quot;bookingid&quot;:2529},{&quot;bookingid&quot;:821},{&quot;bookingid&quot;:2915},{&quot;bookingid&quot;:382},{&quot;bookingid&quot;:1360},{&quot;bookingid&quot;:2607},{&quot;bookingid&quot;:1160},{&quot;bookingid&quot;:481},{&quot;bookingid&quot;:321},{&quot;bookingid&quot;:2062},{&quot;bookingid&quot;:896},{&quot;bookingid&quot;:1167},{&quot;bookingid&quot;:2259},{&quot;bookingid&quot;:1398},{&quot;bookingid&quot;:165},{&quot;bookingid&quot;:1143},{&quot;bookingid&quot;:2755},{&quot;bookingid&quot;:2446},{&quot;bookingid&quot;:616},{&quot;bookingid&quot;:1462},{&quot;bookingid&quot;:235},{&quot;bookingid&quot;:1166},{&quot;bookingid&quot;:1827},{&quot;bookingid&quot;:2430},{&quot;bookingid&quot;:497},{&quot;bookingid&quot;:2683},{&quot;bookingid&quot;:564},{&quot;bookingid&quot;:1039},{&quot;bookingid&quot;:923},{&quot;bookingid&quot;:610},{&quot;bookingid&quot;:261},{&quot;bookingid&quot;:2782},{&quot;bookingid&quot;:1597},{&quot;bookingid&quot;:1777},{&quot;bookingid&quot;:1981},{&quot;bookingid&quot;:2753},{&quot;bookingid&quot;:2019},{&quot;bookingid&quot;:22},{&quot;bookingid&quot;:2255},{&quot;bookingid&quot;:534},{&quot;bookingid&quot;:1668},{&quot;bookingid&quot;:1142},{&quot;bookingid&quot;:2275},{&quot;bookingid&quot;:2974},{&quot;bookingid&quot;:2574},{&quot;bookingid&quot;:242},{&quot;bookingid&quot;:2765},{&quot;bookingid&quot;:1815},{&quot;bookingid&quot;:2038},{&quot;bookingid&quot;:2850},{&quot;bookingid&quot;:2224},{&quot;bookingid&quot;:2171},{&quot;bookingid&quot;:2383},{&quot;bookingid&quot;:888},{&quot;bookingid&quot;:162},{&quot;bookingid&quot;:67},{&quot;bookingid&quot;:1014},{&quot;bookingid&quot;:2464},{&quot;bookingid&quot;:1575},{&quot;bookingid&quot;:1560},{&quot;bookingid&quot;:146},{&quot;bookingid&quot;:205},{&quot;bookingid&quot;:1209},{&quot;bookingid&quot;:1845},{&quot;bookingid&quot;:253},{&quot;bookingid&quot;:2787},{&quot;bookingid&quot;:367},{&quot;bookingid&quot;:74},{&quot;bookingid&quot;:1056},{&quot;bookingid&quot;:2290},{&quot;bookingid&quot;:415},{&quot;bookingid&quot;:379},{&quot;bookingid&quot;:729},{&quot;bookingid&quot;:247},{&quot;bookingid&quot;:1608},{&quot;bookingid&quot;:572},{&quot;bookingid&quot;:1141},{&quot;bookingid&quot;:500},{&quot;bookingid&quot;:1519},{&quot;bookingid&quot;:1627},{&quot;bookingid&quot;:2268},{&quot;bookingid&quot;:279},{&quot;bookingid&quot;:2031},{&quot;bookingid&quot;:2189},{&quot;bookingid&quot;:1721},{&quot;bookingid&quot;:1964},{&quot;bookingid&quot;:1105},{&quot;bookingid&quot;:1128},{&quot;bookingid&quot;:1882},{&quot;bookingid&quot;:1431},{&quot;bookingid&quot;:2940},{&quot;bookingid&quot;:816},{&quot;bookingid&quot;:2725},{&quot;bookingid&quot;:1050},{&quot;bookingid&quot;:88},{&quot;bookingid&quot;:2767},{&quot;bookingid&quot;:3},{&quot;bookingid&quot;:2620},{&quot;bookingid&quot;:2879},{&quot;bookingid&quot;:2249},{&quot;bookingid&quot;:2376},{&quot;bookingid&quot;:1760},{&quot;bookingid&quot;:1651},{&quot;bookingid&quot;:1403},{&quot;bookingid&quot;:2662},{&quot;bookingid&quot;:1229},{&quot;bookingid&quot;:2295},{&quot;bookingid&quot;:138},{&quot;bookingid&quot;:2050},{&quot;bookingid&quot;:1060},{&quot;bookingid&quot;:613},{&quot;bookingid&quot;:134},{&quot;bookingid&quot;:313},{&quot;bookingid&quot;:270},{&quot;bookingid&quot;:1096},{&quot;bookingid&quot;:2537},{&quot;bookingid&quot;:927},{&quot;bookingid&quot;:2835},{&quot;bookingid&quot;:884},{&quot;bookingid&quot;:1456},{&quot;bookingid&quot;:116},{&quot;bookingid&quot;:1137},{&quot;bookingid&quot;:879},{&quot;bookingid&quot;:2180},{&quot;bookingid&quot;:661},{&quot;bookingid&quot;:1320},{&quot;bookingid&quot;:831},{&quot;bookingid&quot;:2322},{&quot;bookingid&quot;:677},{&quot;bookingid&quot;:2526},{&quot;bookingid&quot;:1288},{&quot;bookingid&quot;:430},{&quot;bookingid&quot;:2906},{&quot;bookingid&quot;:2389},{&quot;bookingid&quot;:1250},{&quot;bookingid&quot;:2606},{&quot;bookingid&quot;:2370},{&quot;bookingid&quot;:2070},{&quot;bookingid&quot;:46},{&quot;bookingid&quot;:1342},{&quot;bookingid&quot;:550},{&quot;bookingid&quot;:2686},{&quot;bookingid&quot;:2181},{&quot;bookingid&quot;:1509},{&quot;bookingid&quot;:913},{&quot;bookingid&quot;:1586},{&quot;bookingid&quot;:1867},{&quot;bookingid&quot;:681},{&quot;bookingid&quot;:2431},{&quot;bookingid&quot;:1731},{&quot;bookingid&quot;:290},{&quot;bookingid&quot;:1854},{&quot;bookingid&quot;:517},{&quot;bookingid&quot;:1028},{&quot;bookingid&quot;:122},{&quot;bookingid&quot;:2917},{&quot;bookingid&quot;:1355},{&quot;bookingid&quot;:1150},{&quot;bookingid&quot;:1395},{&quot;bookingid&quot;:2896},{&quot;bookingid&quot;:1850},{&quot;bookingid&quot;:2641},{&quot;bookingid&quot;:2551},{&quot;bookingid&quot;:1041},{&quot;bookingid&quot;:2794},{&quot;bookingid&quot;:620},{&quot;bookingid&quot;:1468},{&quot;bookingid&quot;:2651},{&quot;bookingid&quot;:574},{&quot;bookingid&quot;:1824},{&quot;bookingid&quot;:1903},{&quot;bookingid&quot;:2239},{&quot;bookingid&quot;:1990},{&quot;bookingid&quot;:1643},{&quot;bookingid&quot;:934},{&quot;bookingid&quot;:439},{&quot;bookingid&quot;:811},{&quot;bookingid&quot;:1504},{&quot;bookingid&quot;:566},{&quot;bookingid&quot;:1613},{&quot;bookingid&quot;:2319},{&quot;bookingid&quot;:1292},{&quot;bookingid&quot;:2916},{&quot;bookingid&quot;:700},{&quot;bookingid&quot;:2900},{&quot;bookingid&quot;:754},{&quot;bookingid&quot;:1710},{&quot;bookingid&quot;:893},{&quot;bookingid&quot;:192},{&quot;bookingid&quot;:2963},{&quot;bookingid&quot;:1217},{&quot;bookingid&quot;:886},{&quot;bookingid&quot;:1988},{&quot;bookingid&quot;:1497},{&quot;bookingid&quot;:1442},{&quot;bookingid&quot;:178},{&quot;bookingid&quot;:129},{&quot;bookingid&quot;:795},{&quot;bookingid&quot;:978},{&quot;bookingid&quot;:1215},{&quot;bookingid&quot;:638},{&quot;bookingid&quot;:1937},{&quot;bookingid&quot;:911},{&quot;bookingid&quot;:788},{&quot;bookingid&quot;:2957},{&quot;bookingid&quot;:1804},{&quot;bookingid&quot;:1700},{&quot;bookingid&quot;:2874},{&quot;bookingid&quot;:200},{&quot;bookingid&quot;:815},{&quot;bookingid&quot;:1707},{&quot;bookingid&quot;:728},{&quot;bookingid&quot;:1484},{&quot;bookingid&quot;:954},{&quot;bookingid&quot;:1274},{&quot;bookingid&quot;:343},{&quot;bookingid&quot;:819},{&quot;bookingid&quot;:671},{&quot;bookingid&quot;:793},{&quot;bookingid&quot;:1539},{&quot;bookingid&quot;:2147},{&quot;bookingid&quot;:2414},{&quot;bookingid&quot;:1276},{&quot;bookingid&quot;:1076},{&quot;bookingid&quot;:49},{&quot;bookingid&quot;:1930},{&quot;bookingid&quot;:1550},{&quot;bookingid&quot;:1963},{&quot;bookingid&quot;:2118},{&quot;bookingid&quot;:233},{&quot;bookingid&quot;:1238},{&quot;bookingid&quot;:902},{&quot;bookingid&quot;:2729},{&quot;bookingid&quot;:2152},{&quot;bookingid&quot;:645},{&quot;bookingid&quot;:1496},{&quot;bookingid&quot;:2566},{&quot;bookingid&quot;:858},{&quot;bookingid&quot;:381},{&quot;bookingid&quot;:1574},{&quot;bookingid&quot;:216},{&quot;bookingid&quot;:2468},{&quot;bookingid&quot;:1607},{&quot;bookingid&quot;:418},{&quot;bookingid&quot;:2796},{&quot;bookingid&quot;:996},{&quot;bookingid&quot;:2351},{&quot;bookingid&quot;:2455},{&quot;bookingid&quot;:847},{&quot;bookingid&quot;:1257},{&quot;bookingid&quot;:2084},{&quot;bookingid&quot;:1070},{&quot;bookingid&quot;:1879},{&quot;bookingid&quot;:2119},{&quot;bookingid&quot;:1576},{&quot;bookingid&quot;:1953},{&quot;bookingid&quot;:1103},{&quot;bookingid&quot;:2486},{&quot;bookingid&quot;:2528},{&quot;bookingid&quot;:1774},{&quot;bookingid&quot;:199},{&quot;bookingid&quot;:1126},{&quot;bookingid&quot;:1688},{&quot;bookingid&quot;:2699},{&quot;bookingid&quot;:1530},{&quot;bookingid&quot;:484},{&quot;bookingid&quot;:803},{&quot;bookingid&quot;:1763},{&quot;bookingid&quot;:2103},{&quot;bookingid&quot;:687},{&quot;bookingid&quot;:2703},{&quot;bookingid&quot;:1298},{&quot;bookingid&quot;:1949},{&quot;bookingid&quot;:2951},{&quot;bookingid&quot;:2251},{&quot;bookingid&quot;:1869},{&quot;bookingid&quot;:1420},{&quot;bookingid&quot;:1685},{&quot;bookingid&quot;:2099},{&quot;bookingid&quot;:2121},{&quot;bookingid&quot;:2117},{&quot;bookingid&quot;:2848},{&quot;bookingid&quot;:2569},{&quot;bookingid&quot;:1188},{&quot;bookingid&quot;:909},{&quot;bookingid&quot;:139},{&quot;bookingid&quot;:386},{&quot;bookingid&quot;:143},{&quot;bookingid&quot;:605},{&quot;bookingid&quot;:1102},{&quot;bookingid&quot;:899},{&quot;bookingid&quot;:68},{&quot;bookingid&quot;:2154},{&quot;bookingid&quot;:2885},{&quot;bookingid&quot;:2543},{&quot;bookingid&quot;:38},{&quot;bookingid&quot;:2648},{&quot;bookingid&quot;:1220},{&quot;bookingid&quot;:1492},{&quot;bookingid&quot;:2808},{&quot;bookingid&quot;:2136},{&quot;bookingid&quot;:2058},{&quot;bookingid&quot;:2581},{&quot;bookingid&quot;:169},{&quot;bookingid&quot;:1211},{&quot;bookingid&quot;:606},{&quot;bookingid&quot;:357},{&quot;bookingid&quot;:1605},{&quot;bookingid&quot;:1631},{&quot;bookingid&quot;:1035},{&quot;bookingid&quot;:590},{&quot;bookingid&quot;:2135},{&quot;bookingid&quot;:1394},{&quot;bookingid&quot;:495},{&quot;bookingid&quot;:990},{&quot;bookingid&quot;:6},{&quot;bookingid&quot;:2350},{&quot;bookingid&quot;:2854},{&quot;bookingid&quot;:2681},{&quot;bookingid&quot;:1154},{&quot;bookingid&quot;:1610},{&quot;bookingid&quot;:582},{&quot;bookingid&quot;:1692},{&quot;bookingid&quot;:692},{&quot;bookingid&quot;:1708},{&quot;bookingid&quot;:1132},{&quot;bookingid&quot;:1046},{&quot;bookingid&quot;:332},{&quot;bookingid&quot;:1663},{&quot;bookingid&quot;:2822},{&quot;bookingid&quot;:1472},{&quot;bookingid&quot;:562},{&quot;bookingid&quot;:1310},{&quot;bookingid&quot;:1002},{&quot;bookingid&quot;:2422},{&quot;bookingid&quot;:2219},{&quot;bookingid&quot;:2087},{&quot;bookingid&quot;:2138},{&quot;bookingid&quot;:2535},{&quot;bookingid&quot;:296},{&quot;bookingid&quot;:1813},{&quot;bookingid&quot;:2089},{&quot;bookingid&quot;:1100},{&quot;bookingid&quot;:2941},{&quot;bookingid&quot;:1883},{&quot;bookingid&quot;:872},{&quot;bookingid&quot;:696},{&quot;bookingid&quot;:2096},{&quot;bookingid&quot;:140},{&quot;bookingid&quot;:2353},{&quot;bookingid&quot;:4},{&quot;bookingid&quot;:976},{&quot;bookingid&quot;:2751},{&quot;bookingid&quot;:1914},{&quot;bookingid&quot;:2834},{&quot;bookingid&quot;:716},{&quot;bookingid&quot;:2299},{&quot;bookingid&quot;:2454},{&quot;bookingid&quot;:2802},{&quot;bookingid&quot;:2484},{&quot;bookingid&quot;:1842},{&quot;bookingid&quot;:2125},{&quot;bookingid&quot;:1829},{&quot;bookingid&quot;:1551},{&quot;bookingid&quot;:604},{&quot;bookingid&quot;:502},{&quot;bookingid&quot;:1737},{&quot;bookingid&quot;:1517},{&quot;bookingid&quot;:27},{&quot;bookingid&quot;:560},{&quot;bookingid&quot;:1017},{&quot;bookingid&quot;:2667},{&quot;bookingid&quot;:2169},{&quot;bookingid&quot;:2492},{&quot;bookingid&quot;:2611},{&quot;bookingid&quot;:456},{&quot;bookingid&quot;:2027},{&quot;bookingid&quot;:440},{&quot;bookingid&quot;:1532},{&quot;bookingid&quot;:1043},{&quot;bookingid&quot;:929},{&quot;bookingid&quot;:2202},{&quot;bookingid&quot;:2533},{&quot;bookingid&quot;:952},{&quot;bookingid&quot;:1699},{&quot;bookingid&quot;:1823},{&quot;bookingid&quot;:2025},{&quot;bookingid&quot;:690},{&quot;bookingid&quot;:711},{&quot;bookingid&quot;:305},{&quot;bookingid&quot;:1889},{&quot;bookingid&quot;:2886},{&quot;bookingid&quot;:1389},{&quot;bookingid&quot;:2504},{&quot;bookingid&quot;:2820},{&quot;bookingid&quot;:1861},{&quot;bookingid&quot;:1465},{&quot;bookingid&quot;:1901},{&quot;bookingid&quot;:2398},{&quot;bookingid&quot;:2108},{&quot;bookingid&quot;:829},{&quot;bookingid&quot;:2774},{&quot;bookingid&quot;:2457},{&quot;bookingid&quot;:640},{&quot;bookingid&quot;:1340},{&quot;bookingid&quot;:117},{&quot;bookingid&quot;:969},{&quot;bookingid&quot;:1007},{&quot;bookingid&quot;:2014},{&quot;bookingid&quot;:1653},{&quot;bookingid&quot;:1295},{&quot;bookingid&quot;:904},{&quot;bookingid&quot;:2231},{&quot;bookingid&quot;:1525},{&quot;bookingid&quot;:1947},{&quot;bookingid&quot;:1689},{&quot;bookingid&quot;:194},{&quot;bookingid&quot;:2505},{&quot;bookingid&quot;:1571},{&quot;bookingid&quot;:1502},{&quot;bookingid&quot;:1359},{&quot;bookingid&quot;:2368},{&quot;bookingid&quot;:1175},{&quot;bookingid&quot;:1505},{&quot;bookingid&quot;:120},{&quot;bookingid&quot;:2878},{&quot;bookingid&quot;:221},{&quot;bookingid&quot;:1725},{&quot;bookingid&quot;:1494},{&quot;bookingid&quot;:846},{&quot;bookingid&quot;:2456},{&quot;bookingid&quot;:2497},{&quot;bookingid&quot;:2235},{&quot;bookingid&quot;:2545},{&quot;bookingid&quot;:2894},{&quot;bookingid&quot;:1430},{&quot;bookingid&quot;:127},{&quot;bookingid&quot;:924},{&quot;bookingid&quot;:2170},{&quot;bookingid&quot;:1944},{&quot;bookingid&quot;:549},{&quot;bookingid&quot;:2893},{&quot;bookingid&quot;:1736},{&quot;bookingid&quot;:2199},{&quot;bookingid&quot;:835},{&quot;bookingid&quot;:1058},{&quot;bookingid&quot;:854},{&quot;bookingid&quot;:20},{&quot;bookingid&quot;:1654},{&quot;bookingid&quot;:2081},{&quot;bookingid&quot;:945},{&quot;bookingid&quot;:291},{&quot;bookingid&quot;:2640},{&quot;bookingid&quot;:1856},{&quot;bookingid&quot;:697},{&quot;bookingid&quot;:1948},{&quot;bookingid&quot;:1120},{&quot;bookingid&quot;:1134},{&quot;bookingid&quot;:2310},{&quot;bookingid&quot;:2153},{&quot;bookingid&quot;:167},{&quot;bookingid&quot;:731},{&quot;bookingid&quot;:1336},{&quot;bookingid&quot;:2312},{&quot;bookingid&quot;:372},{&quot;bookingid&quot;:2982},{&quot;bookingid&quot;:1373},{&quot;bookingid&quot;:118},{&quot;bookingid&quot;:326},{&quot;bookingid&quot;:2236},{&quot;bookingid&quot;:2015},{&quot;bookingid&quot;:2934},{&quot;bookingid&quot;:1548},{&quot;bookingid&quot;:885},{&quot;bookingid&quot;:2733},{&quot;bookingid&quot;:468},{&quot;bookingid&quot;:944},{&quot;bookingid&quot;:1499},{&quot;bookingid&quot;:1391},{&quot;bookingid&quot;:149},{&quot;bookingid&quot;:2482},{&quot;bookingid&quot;:1528},{&quot;bookingid&quot;:807},{&quot;bookingid&quot;:943},{&quot;bookingid&quot;:2773},{&quot;bookingid&quot;:286},{&quot;bookingid&quot;:2587},{&quot;bookingid&quot;:939},{&quot;bookingid&quot;:239},{&quot;bookingid&quot;:1129},{&quot;bookingid&quot;:176},{&quot;bookingid&quot;:1408},{&quot;bookingid&quot;:2758},{&quot;bookingid&quot;:1453},{&quot;bookingid&quot;:243},{&quot;bookingid&quot;:1628},{&quot;bookingid&quot;:384},{&quot;bookingid&quot;:137},{&quot;bookingid&quot;:656},{&quot;bookingid&quot;:2146},{&quot;bookingid&quot;:841},{&quot;bookingid&quot;:2277},{&quot;bookingid&quot;:1243},{&quot;bookingid&quot;:1715},{&quot;bookingid&quot;:2393},{&quot;bookingid&quot;:2654},{&quot;bookingid&quot;:306},{&quot;bookingid&quot;:1162},{&quot;bookingid&quot;:1612},{&quot;bookingid&quot;:1743},{&quot;bookingid&quot;:15},{&quot;bookingid&quot;:921},{&quot;bookingid&quot;:2091},{&quot;bookingid&quot;:1114},{&quot;bookingid&quot;:1282},{&quot;bookingid&quot;:960},{&quot;bookingid&quot;:1080},{&quot;bookingid&quot;:2744},{&quot;bookingid&quot;:1313},{&quot;bookingid&quot;:2222},{&quot;bookingid&quot;:2159},{&quot;bookingid&quot;:2030},{&quot;bookingid&quot;:490},{&quot;bookingid&quot;:765},{&quot;bookingid&quot;:196},{&quot;bookingid&quot;:2375},{&quot;bookingid&quot;:59},{&quot;bookingid&quot;:234},{&quot;bookingid&quot;:897},{&quot;bookingid&quot;:441},{&quot;bookingid&quot;:2198},{&quot;bookingid&quot;:1221},{&quot;bookingid&quot;:299},{&quot;bookingid&quot;:876},{&quot;bookingid&quot;:1920},{&quot;bookingid&quot;:2229},{&quot;bookingid&quot;:764},{&quot;bookingid&quot;:619},{&quot;bookingid&quot;:1933},{&quot;bookingid&quot;:85},{&quot;bookingid&quot;:2637},{&quot;bookingid&quot;:1131},{&quot;bookingid&quot;:1187},{&quot;bookingid&quot;:1778},{&quot;bookingid&quot;:2401},{&quot;bookingid&quot;:1090},{&quot;bookingid&quot;:859},{&quot;bookingid&quot;:1587},{&quot;bookingid&quot;:462},{&quot;bookingid&quot;:1144},{&quot;bookingid&quot;:474},{&quot;bookingid&quot;:1435},{&quot;bookingid&quot;:1094},{&quot;bookingid&quot;:2727},{&quot;bookingid&quot;:809},{&quot;bookingid&quot;:1538},{&quot;bookingid&quot;:2919},{&quot;bookingid&quot;:2660},{&quot;bookingid&quot;:1779},{&quot;bookingid&quot;:2390},{&quot;bookingid&quot;:1788},{&quot;bookingid&quot;:2580},{&quot;bookingid&quot;:236},{&quot;bookingid&quot;:231},{&quot;bookingid&quot;:1556},{&quot;bookingid&quot;:769},{&quot;bookingid&quot;:1052},{&quot;bookingid&quot;:507},{&quot;bookingid&quot;:2563},{&quot;bookingid&quot;:1246},{&quot;bookingid&quot;:1934},{&quot;bookingid&quot;:2818},{&quot;bookingid&quot;:762},{&quot;bookingid&quot;:1214},{&quot;bookingid&quot;:699},{&quot;bookingid&quot;:2045},{&quot;bookingid&quot;:1911},{&quot;bookingid&quot;:2104},{&quot;bookingid&quot;:82},{&quot;bookingid&quot;:2049},{&quot;bookingid&quot;:558},{&quot;bookingid&quot;:1018},{&quot;bookingid&quot;:1516},{&quot;bookingid&quot;:1170},{&quot;bookingid&quot;:2441},{&quot;bookingid&quot;:2908},{&quot;bookingid&quot;:2909},{&quot;bookingid&quot;:2065},{&quot;bookingid&quot;:2444},{&quot;bookingid&quot;:1482},{&quot;bookingid&quot;:1224},{&quot;bookingid&quot;:2837},{&quot;bookingid&quot;:505},{&quot;bookingid&quot;:2691},{&quot;bookingid&quot;:865},{&quot;bookingid&quot;:1346},{&quot;bookingid&quot;:207},{&quot;bookingid&quot;:1277},{&quot;bookingid&quot;:354},{&quot;bookingid&quot;:1358},{&quot;bookingid&quot;:453},{&quot;bookingid&quot;:2585},{&quot;bookingid&quot;:351},{&quot;bookingid&quot;:1169},{&quot;bookingid&quot;:2741},{&quot;bookingid&quot;:1891},{&quot;bookingid&quot;:1752},{&quot;bookingid&quot;:2144},{&quot;bookingid&quot;:1727},{&quot;bookingid&quot;:1802},{&quot;bookingid&quot;:774},{&quot;bookingid&quot;:2739},{&quot;bookingid&quot;:322},{&quot;bookingid&quot;:2191},{&quot;bookingid&quot;:600},{&quot;bookingid&quot;:1518},{&quot;bookingid&quot;:1520},{&quot;bookingid&quot;:2205},{&quot;bookingid&quot;:2145},{&quot;bookingid&quot;:1048},{&quot;bookingid&quot;:1085},{&quot;bookingid&quot;:280},{&quot;bookingid&quot;:1740},{&quot;bookingid&quot;:164},{&quot;bookingid&quot;:2213},{&quot;bookingid&quot;:1045},{&quot;bookingid&quot;:2783},{&quot;bookingid&quot;:2770},{&quot;bookingid&quot;:2265},{&quot;bookingid&quot;:2139},{&quot;bookingid&quot;:1384},{&quot;bookingid&quot;:12},{&quot;bookingid&quot;:2245},{&quot;bookingid&quot;:2524},{&quot;bookingid&quot;:2271},{&quot;bookingid&quot;:516},{&quot;bookingid&quot;:2336},{&quot;bookingid&quot;:627},{&quot;bookingid&quot;:1726},{&quot;bookingid&quot;:1634},{&quot;bookingid&quot;:512},{&quot;bookingid&quot;:2777},{&quot;bookingid&quot;:2356},{&quot;bookingid&quot;:2868},{&quot;bookingid&quot;:686},{&quot;bookingid&quot;:2044},{&quot;bookingid&quot;:374},{&quot;bookingid&quot;:2186},{&quot;bookingid&quot;:744},{&quot;bookingid&quot;:30},{&quot;bookingid&quot;:2821},{&quot;bookingid&quot;:2131},{&quot;bookingid&quot;:411},{&quot;bookingid&quot;:421},{&quot;bookingid&quot;:337},{&quot;bookingid&quot;:2287},{&quot;bookingid&quot;:106},{&quot;bookingid&quot;:1111},{&quot;bookingid&quot;:1428},{&quot;bookingid&quot;:1998},{&quot;bookingid&quot;:1665},{&quot;bookingid&quot;:2630},{&quot;bookingid&quot;:2168},{&quot;bookingid&quot;:1290},{&quot;bookingid&quot;:2384},{&quot;bookingid&quot;:327},{&quot;bookingid&quot;:2267},{&quot;bookingid&quot;:1797},{&quot;bookingid&quot;:2321},{&quot;bookingid&quot;:1321},{&quot;bookingid&quot;:300},{&quot;bookingid&quot;:997},{&quot;bookingid&quot;:390},{&quot;bookingid&quot;:1341},{&quot;bookingid&quot;:2012},{&quot;bookingid&quot;:2870},{&quot;bookingid&quot;:2359},{&quot;bookingid&quot;:1460},{&quot;bookingid&quot;:2141},{&quot;bookingid&quot;:2694},{&quot;bookingid&quot;:2541},{&quot;bookingid&quot;:1580},{&quot;bookingid&quot;:2192},{&quot;bookingid&quot;:2128},{&quot;bookingid&quot;:1566},{&quot;bookingid&quot;:417},{&quot;bookingid&quot;:2162},{&quot;bookingid&quot;:2949},{&quot;bookingid&quot;:2428},{&quot;bookingid&quot;:1924},{&quot;bookingid&quot;:2493},{&quot;bookingid&quot;:1397},{&quot;bookingid&quot;:1237},{&quot;bookingid&quot;:2669},{&quot;bookingid&quot;:2572},{&quot;bookingid&quot;:1801},{&quot;bookingid&quot;:2656},{&quot;bookingid&quot;:1614},{&quot;bookingid&quot;:2829},{&quot;bookingid&quot;:2923},{&quot;bookingid&quot;:2705},{&quot;bookingid&quot;:2619},{&quot;bookingid&quot;:1227},{&quot;bookingid&quot;:2673},{&quot;bookingid&quot;:1013},{&quot;bookingid&quot;:1147},{&quot;bookingid&quot;:1325},{&quot;bookingid&quot;:1165},{&quot;bookingid&quot;:2264},{&quot;bookingid&quot;:2348},{&quot;bookingid&quot;:1617},{&quot;bookingid&quot;:1212},{&quot;bookingid&quot;:521},{&quot;bookingid&quot;:43},{&quot;bookingid&quot;:1303},{&quot;bookingid&quot;:1748},{&quot;bookingid&quot;:1419},{&quot;bookingid&quot;:2825},{&quot;bookingid&quot;:704},{&quot;bookingid&quot;:632},{&quot;bookingid&quot;:1754},{&quot;bookingid&quot;:799},{&quot;bookingid&quot;:2713},{&quot;bookingid&quot;:2855},{&quot;bookingid&quot;:563},{&quot;bookingid&quot;:798},{&quot;bookingid&quot;:1263},{&quot;bookingid&quot;:1863},{&quot;bookingid&quot;:2978},{&quot;bookingid&quot;:1467},{&quot;bookingid&quot;:1927},{&quot;bookingid&quot;:282},{&quot;bookingid&quot;:274},{&quot;bookingid&quot;:2700},{&quot;bookingid&quot;:2134},{&quot;bookingid&quot;:533},{&quot;bookingid&quot;:768},{&quot;bookingid&quot;:2280},{&quot;bookingid&quot;:2439},{&quot;bookingid&quot;:1033},{&quot;bookingid&quot;:2521},{&quot;bookingid&quot;:2074},{&quot;bookingid&quot;:801},{&quot;bookingid&quot;:852},{&quot;bookingid&quot;:361},{&quot;bookingid&quot;:2057},{&quot;bookingid&quot;:553},{&quot;bookingid&quot;:2381},{&quot;bookingid&quot;:673},{&quot;bookingid&quot;:1787},{&quot;bookingid&quot;:589},{&quot;bookingid&quot;:1751},{&quot;bookingid&quot;:1633},{&quot;bookingid&quot;:961},{&quot;bookingid&quot;:772},{&quot;bookingid&quot;:2046},{&quot;bookingid&quot;:1508},{&quot;bookingid&quot;:2985},{&quot;bookingid&quot;:1767},{&quot;bookingid&quot;:1616},{&quot;bookingid&quot;:2622},{&quot;bookingid&quot;:1785},{&quot;bookingid&quot;:988},{&quot;bookingid&quot;:392},{&quot;bookingid&quot;:318},{&quot;bookingid&quot;:1649},{&quot;bookingid&quot;:1375},{&quot;bookingid&quot;:2357},{&quot;bookingid&quot;:214},{&quot;bookingid&quot;:2972},{&quot;bookingid&quot;:284},{&quot;bookingid&quot;:734},{&quot;bookingid&quot;:2643},{&quot;bookingid&quot;:1836},{&quot;bookingid&quot;:2305},{&quot;bookingid&quot;:2633},{&quot;bookingid&quot;:1037},{&quot;bookingid&quot;:1567},{&quot;bookingid&quot;:652},{&quot;bookingid&quot;:110},{&quot;bookingid&quot;:121},{&quot;bookingid&quot;:1669},{&quot;bookingid&quot;:2706},{&quot;bookingid&quot;:878},{&quot;bookingid&quot;:2285},{&quot;bookingid&quot;:2776},{&quot;bookingid&quot;:1925},{&quot;bookingid&quot;:1734},{&quot;bookingid&quot;:2550},{&quot;bookingid&quot;:717},{&quot;bookingid&quot;:2037},{&quot;bookingid&quot;:2448},{&quot;bookingid&quot;:208},{&quot;bookingid&quot;:2539},{&quot;bookingid&quot;:153},{&quot;bookingid&quot;:849},{&quot;bookingid&quot;:2546},{&quot;bookingid&quot;:1766},{&quot;bookingid&quot;:1661},{&quot;bookingid&quot;:2586},{&quot;bookingid&quot;:1514},{&quot;bookingid&quot;:1904},{&quot;bookingid&quot;:1424},{&quot;bookingid&quot;:2724},{&quot;bookingid&quot;:2649},{&quot;bookingid&quot;:1099},{&quot;bookingid&quot;:602},{&quot;bookingid&quot;:34},{&quot;bookingid&quot;:1190},{&quot;bookingid&quot;:1821},{&quot;bookingid&quot;:1711},{&quot;bookingid&quot;:2804},{&quot;bookingid&quot;:837},{&quot;bookingid&quot;:2358},{&quot;bookingid&quot;:2041},{&quot;bookingid&quot;:171},{&quot;bookingid&quot;:1352},{&quot;bookingid&quot;:2282},{&quot;bookingid&quot;:23},{&quot;bookingid&quot;:721},{&quot;bookingid&quot;:1510},{&quot;bookingid&quot;:1794},{&quot;bookingid&quot;:348},{&quot;bookingid&quot;:611},{&quot;bookingid&quot;:2328},{&quot;bookingid&quot;:2697},{&quot;bookingid&quot;:1422},{&quot;bookingid&quot;:219},{&quot;bookingid&quot;:2609},{&quot;bookingid&quot;:1283},{&quot;bookingid&quot;:2193},{&quot;bookingid&quot;:1986},{&quot;bookingid&quot;:587},{&quot;bookingid&quot;:2552},{&quot;bookingid&quot;:212},{&quot;bookingid&quot;:1370},{&quot;bookingid&quot;:1578},{&quot;bookingid&quot;:2478},{&quot;bookingid&quot;:1951},{&quot;bookingid&quot;:1110},{&quot;bookingid&quot;:1729},{&quot;bookingid&quot;:334},{&quot;bookingid&quot;:1275},{&quot;bookingid&quot;:2023},{&quot;bookingid&quot;:2415},{&quot;bookingid&quot;:598},{&quot;bookingid&quot;:265},{&quot;bookingid&quot;:435},{&quot;bookingid&quot;:2048},{&quot;bookingid&quot;:1623},{&quot;bookingid&quot;:1959},{&quot;bookingid&quot;:1552},{&quot;bookingid&quot;:1464},{&quot;bookingid&quot;:2331},{&quot;bookingid&quot;:181},{&quot;bookingid&quot;:1348},{&quot;bookingid&quot;:2360},{&quot;bookingid&quot;:2693},{&quot;bookingid&quot;:191},{&quot;bookingid&quot;:1309},{&quot;bookingid&quot;:541},{&quot;bookingid&quot;:975},{&quot;bookingid&quot;:1918},{&quot;bookingid&quot;:1967},{&quot;bookingid&quot;:676},{&quot;bookingid&quot;:2133},{&quot;bookingid&quot;:2534},{&quot;bookingid&quot;:271},{&quot;bookingid&quot;:436},{&quot;bookingid&quot;:302},{&quot;bookingid&quot;:2884},{&quot;bookingid&quot;:1553},{&quot;bookingid&quot;:56},{&quot;bookingid&quot;:1026},{&quot;bookingid&quot;:722},{&quot;bookingid&quot;:1265},{&quot;bookingid&quot;:2635},{&quot;bookingid&quot;:77},{&quot;bookingid&quot;:767},{&quot;bookingid&quot;:277},{&quot;bookingid&quot;:1675},{&quot;bookingid&quot;:2471},{&quot;bookingid&quot;:1447},{&quot;bookingid&quot;:2932},{&quot;bookingid&quot;:880},{&quot;bookingid&quot;:1873},{&quot;bookingid&quot;:2639},{&quot;bookingid&quot;:1805},{&quot;bookingid&quot;:1253},{&quot;bookingid&quot;:1004},{&quot;bookingid&quot;:2425},{&quot;bookingid&quot;:217},{&quot;bookingid&quot;:680},{&quot;bookingid&quot;:2385},{&quot;bookingid&quot;:2564},{&quot;bookingid&quot;:2194},{&quot;bookingid&quot;:314},{&quot;bookingid&quot;:1790},{&quot;bookingid&quot;:142},{&quot;bookingid&quot;:1021},{&quot;bookingid&quot;:1855},{&quot;bookingid&quot;:538},{&quot;bookingid&quot;:1533},{&quot;bookingid&quot;:2232},{&quot;bookingid&quot;:156},{&quot;bookingid&quot;:626},{&quot;bookingid&quot;:2442},{&quot;bookingid&quot;:933},{&quot;bookingid&quot;:2333},{&quot;bookingid&quot;:2473},{&quot;bookingid&quot;:2380},{&quot;bookingid&quot;:466},{&quot;bookingid&quot;:1868},{&quot;bookingid&quot;:773},{&quot;bookingid&quot;:1658},{&quot;bookingid&quot;:1742},{&quot;bookingid&quot;:2712},{&quot;bookingid&quot;:2303},{&quot;bookingid&quot;:2488},{&quot;bookingid&quot;:1679},{&quot;bookingid&quot;:341},{&quot;bookingid&quot;:2344},{&quot;bookingid&quot;:292},{&quot;bookingid&quot;:1445},{&quot;bookingid&quot;:1260},{&quot;bookingid&quot;:1071},{&quot;bookingid&quot;:104},{&quot;bookingid&quot;:2967},{&quot;bookingid&quot;:358},{&quot;bookingid&quot;:2798},{&quot;bookingid&quot;:2317},{&quot;bookingid&quot;:2163},{&quot;bookingid&quot;:150},{&quot;bookingid&quot;:786},{&quot;bookingid&quot;:1980},{&quot;bookingid&quot;:78},{&quot;bookingid&quot;:1646},{&quot;bookingid&quot;:917},{&quot;bookingid&quot;:592},{&quot;bookingid&quot;:1812},{&quot;bookingid&quot;:2071},{&quot;bookingid&quot;:2955},{&quot;bookingid&quot;:16},{&quot;bookingid&quot;:1410},{&quot;bookingid&quot;:185},{&quot;bookingid&quot;:1127},{&quot;bookingid&quot;:1480},{&quot;bookingid&quot;:571},{&quot;bookingid&quot;:1444},{&quot;bookingid&quot;:756},{&quot;bookingid&quot;:1},{&quot;bookingid&quot;:1262},{&quot;bookingid&quot;:984},{&quot;bookingid&quot;:957},{&quot;bookingid&quot;:1338},{&quot;bookingid&quot;:672},{&quot;bookingid&quot;:2625},{&quot;bookingid&quot;:907},{&quot;bookingid&quot;:2621},{&quot;bookingid&quot;:727},{&quot;bookingid&quot;:2067},{&quot;bookingid&quot;:1840},{&quot;bookingid&quot;:1898},{&quot;bookingid&quot;:1226},{&quot;bookingid&quot;:1207},{&quot;bookingid&quot;:2477},{&quot;bookingid&quot;:2792},{&quot;bookingid&quot;:2575},{&quot;bookingid&quot;:1476},{&quot;bookingid&quot;:1349},{&quot;bookingid&quot;:1615},{&quot;bookingid&quot;:1591},{&quot;bookingid&quot;:62},{&quot;bookingid&quot;:1195},{&quot;bookingid&quot;:1116},{&quot;bookingid&quot;:2805},{&quot;bookingid&quot;:575},{&quot;bookingid&quot;:419},{&quot;bookingid&quot;:461},{&quot;bookingid&quot;:1828},{&quot;bookingid&quot;:2938},{&quot;bookingid&quot;:2832},{&quot;bookingid&quot;:936},{&quot;bookingid&quot;:1799},{&quot;bookingid&quot;:825},{&quot;bookingid&quot;:1960},{&quot;bookingid&quot;:177},{&quot;bookingid&quot;:2965},{&quot;bookingid&quot;:1029},{&quot;bookingid&quot;:2092},{&quot;bookingid&quot;:180},{&quot;bookingid&quot;:159},{&quot;bookingid&quot;:1008},{&quot;bookingid&quot;:273},{&quot;bookingid&quot;:2311},{&quot;bookingid&quot;:37},{&quot;bookingid&quot;:2718},{&quot;bookingid&quot;:1421},{&quot;bookingid&quot;:459},{&quot;bookingid&quot;:2623},{&quot;bookingid&quot;:833},{&quot;bookingid&quot;:2514},{&quot;bookingid&quot;:1598},{&quot;bookingid&quot;:472},{&quot;bookingid&quot;:1381},{&quot;bookingid&quot;:2945},{&quot;bookingid&quot;:108},{&quot;bookingid&quot;:2925},{&quot;bookingid&quot;:742},{&quot;bookingid&quot;:843},{&quot;bookingid&quot;:2708},{&quot;bookingid&quot;:90},{&quot;bookingid&quot;:919},{&quot;bookingid&quot;:496},{&quot;bookingid&quot;:2284},{&quot;bookingid&quot;:1353},{&quot;bookingid&quot;:657},{&quot;bookingid&quot;:1027},{&quot;bookingid&quot;:2},{&quot;bookingid&quot;:9},{&quot;bookingid&quot;:972},{&quot;bookingid&quot;:317},{&quot;bookingid&quot;:460},{&quot;bookingid&quot;:2463},{&quot;bookingid&quot;:531},{&quot;bookingid&quot;:1281},{&quot;bookingid&quot;:973},{&quot;bookingid&quot;:857},{&quot;bookingid&quot;:263},{&quot;bookingid&quot;:414},{&quot;bookingid&quot;:585},{&quot;bookingid&quot;:668},{&quot;bookingid&quot;:2343},{&quot;bookingid&quot;:1579},{&quot;bookingid&quot;:1414},{&quot;bookingid&quot;:60},{&quot;bookingid&quot;:1866},{&quot;bookingid&quot;:107},{&quot;bookingid&quot;:401},{&quot;bookingid&quot;:1203},{&quot;bookingid&quot;:2184},{&quot;bookingid&quot;:2097},{&quot;bookingid&quot;:2314},{&quot;bookingid&quot;:1664},{&quot;bookingid&quot;:2470},{&quot;bookingid&quot;:1568},{&quot;bookingid&quot;:739},{&quot;bookingid&quot;:2672},{&quot;bookingid&quot;:1769},{&quot;bookingid&quot;:951},{&quot;bookingid&quot;:2759},{&quot;bookingid&quot;:2525},{&quot;bookingid&quot;:1686},{&quot;bookingid&quot;:1906},{&quot;bookingid&quot;:1919},{&quot;bookingid&quot;:2270},{&quot;bookingid&quot;:1989},{&quot;bookingid&quot;:92},{&quot;bookingid&quot;:1012},{&quot;bookingid&quot;:1332},{&quot;bookingid&quot;:2447},{&quot;bookingid&quot;:2709},{&quot;bookingid&quot;:758},{&quot;bookingid&quot;:1581},{&quot;bookingid&quot;:1030},{&quot;bookingid&quot;:158},{&quot;bookingid&quot;:812},{&quot;bookingid&quot;:648},{&quot;bookingid&quot;:1849},{&quot;bookingid&quot;:922},{&quot;bookingid&quot;:1366},{&quot;bookingid&quot;:103},{&quot;bookingid&quot;:255},{&quot;bookingid&quot;:1264},{&quot;bookingid&quot;:2080},{&quot;bookingid&quot;:29},{&quot;bookingid&quot;:1323},{&quot;bookingid&quot;:1921},{&quot;bookingid&quot;:2438},{&quot;bookingid&quot;:1326},{&quot;bookingid&quot;:628},{&quot;bookingid&quot;:1993},{&quot;bookingid&quot;:2429},{&quot;bookingid&quot;:1603},{&quot;bookingid&quot;:1874},{&quot;bookingid&quot;:1991},{&quot;bookingid&quot;:2964},{&quot;bookingid&quot;:2522},{&quot;bookingid&quot;:1437},{&quot;bookingid&quot;:714},{&quot;bookingid&quot;:2140},{&quot;bookingid&quot;:2560},{&quot;bookingid&quot;:1650},{&quot;bookingid&quot;:2112},{&quot;bookingid&quot;:882},{&quot;bookingid&quot;:547},{&quot;bookingid&quot;:360},{&quot;bookingid&quot;:2325},{&quot;bookingid&quot;:1706},{&quot;bookingid&quot;:1440},{&quot;bookingid&quot;:912},{&quot;bookingid&quot;:2570},{&quot;bookingid&quot;:1503},{&quot;bookingid&quot;:2704},{&quot;bookingid&quot;:1289},{&quot;bookingid&quot;:2116},{&quot;bookingid&quot;:2596},{&quot;bookingid&quot;:1458},{&quot;bookingid&quot;:2921},{&quot;bookingid&quot;:2206},{&quot;bookingid&quot;:1259},{&quot;bookingid&quot;:2647},{&quot;bookingid&quot;:2369},{&quot;bookingid&quot;:1450},{&quot;bookingid&quot;:294},{&quot;bookingid&quot;:2242},{&quot;bookingid&quot;:483},{&quot;bookingid&quot;:1645},{&quot;bookingid&quot;:2281},{&quot;bookingid&quot;:1407},{&quot;bookingid&quot;:331},{&quot;bookingid&quot;:539},{&quot;bookingid&quot;:26},{&quot;bookingid&quot;:644},{&quot;bookingid&quot;:641},{&quot;bookingid&quot;:2840},{&quot;bookingid&quot;:2589},{&quot;bookingid&quot;:1637},{&quot;bookingid&quot;:197},{&quot;bookingid&quot;:2392},{&quot;bookingid&quot;:651},{&quot;bookingid&quot;:403},{&quot;bookingid&quot;:2035},{&quot;bookingid&quot;:2766},{&quot;bookingid&quot;:359},{&quot;bookingid&quot;:1488},{&quot;bookingid&quot;:1622},{&quot;bookingid&quot;:962},{&quot;bookingid&quot;:891},{&quot;bookingid&quot;:432},{&quot;bookingid&quot;:2979},{&quot;bookingid&quot;:1036},{&quot;bookingid&quot;:2155},{&quot;bookingid&quot;:1271},{&quot;bookingid&quot;:1491},{&quot;bookingid&quot;:783},{&quot;bookingid&quot;:1380},{&quot;bookingid&quot;:551},{&quot;bookingid&quot;:2887},{&quot;bookingid&quot;:2227},{&quot;bookingid&quot;:423},{&quot;bookingid&quot;:344},{&quot;bookingid&quot;:1881},{&quot;bookingid&quot;:1585},{&quot;bookingid&quot;:2975},{&quot;bookingid&quot;:438},{&quot;bookingid&quot;:709},{&quot;bookingid&quot;:1843},{&quot;bookingid&quot;:2479},{&quot;bookingid&quot;:489},{&quot;bookingid&quot;:232},{&quot;bookingid&quot;:771},{&quot;bookingid&quot;:349},{&quot;bookingid&quot;:1982},{&quot;bookingid&quot;:581},{&quot;bookingid&quot;:1040},{&quot;bookingid&quot;:2503},{&quot;bookingid&quot;:1269},{&quot;bookingid&quot;:2628},{&quot;bookingid&quot;:2577},{&quot;bookingid&quot;:1377},{&quot;bookingid&quot;:1945},{&quot;bookingid&quot;:2678},{&quot;bookingid&quot;:1183},{&quot;bookingid&quot;:262},{&quot;bookingid&quot;:2603},{&quot;bookingid&quot;:1968},{&quot;bookingid&quot;:840},{&quot;bookingid&quot;:2240},{&quot;bookingid&quot;:1308},{&quot;bookingid&quot;:437},{&quot;bookingid&quot;:215},{&quot;bookingid&quot;:2722},{&quot;bookingid&quot;:2327},{&quot;bookingid&quot;:209}]
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def resBody = response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def actualBookingIdLength = resBody.length</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print actualBookingIdLength</span>
+
+  <span class="lead-duration duration">0.043</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>23:26:58.964 [print] 2056 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match resBody[10].bookingid == &quot;#present&quot;</span>
+
+  <span class="lead-duration duration">0.051</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_2_332646225.html">BookingAPITestFeature/Test_Get_Booking_API.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_233058432.html">@regression</a>
+       <a href="report-tag_4089311534.html">@smoke</a>
+</div>
+
+
+  <span class="lead-duration duration">7.797</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-16">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Test Get Specific Booking API</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-16" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-17">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-17" class="inner-level collapse collapsable-details ">
+      <div class="step">
+          <div class="comment indention"># Creating User -----------------------------&gt;</div>
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path &quot;booking&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Content-Type = ContentType</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Accept = AcceptVar</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request createRequestPayload</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">5.568</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-18">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details">
+        <pre>23:26:54.041 request:
+1 &gt; POST https://restful-booker.herokuapp.com/booking
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Accept: application/json
+1 &gt; Content-Length: 186
+1 &gt; Host: restful-booker.herokuapp.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;firstname&quot;:&quot;Ruben&quot;,&quot;lastname&quot;:&quot;Rutherford&quot;,&quot;totalprice&quot;:&quot;0956&quot;,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2024-04-18&quot;,&quot;checkout&quot;:&quot;2024-04-19&quot;},&quot;additionalneeds&quot;:[&quot;Tea&quot;,&quot;BreakFast&quot;]}
+
+23:26:58.441 response time in milliseconds: 4398
+1 &lt; 200
+1 &lt; Server: Cowboy
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1713463018&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=Rk9mytpBMIiBWR0eJJr62hNTX%2FPARJVjfAkrkVdgDxA%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1713463018&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=Rk9mytpBMIiBWR0eJJr62hNTX%2FPARJVjfAkrkVdgDxA%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 212
+1 &lt; Etag: W/&quot;d4-f3WtAYOEt6cvtMWx2btMTp6xcus&quot;
+1 &lt; Date: Thu, 18 Apr 2024 17:56:58 GMT
+1 &lt; Via: 1.1 vegur
+{&quot;bookingid&quot;:2988,&quot;booking&quot;:{&quot;firstname&quot;:&quot;Ruben&quot;,&quot;lastname&quot;:&quot;Rutherford&quot;,&quot;totalprice&quot;:956,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2024-04-18&quot;,&quot;checkout&quot;:&quot;2024-04-19&quot;},&quot;additionalneeds&quot;:[&quot;Tea&quot;,&quot;BreakFast&quot;]}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def bookingid = $.bookingid</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match $.bookingid == &quot;#present&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def firstname = createRequestPayload.firstname</span>
+
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def lastname = createRequestPayload.lastname</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def totalprice = parseInt(createRequestPayload.totalprice)</span>
+
+  <span class="lead-duration duration">0.021</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def checkin = createRequestPayload.bookingdates.checkin</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def checkout = createRequestPayload.bookingdates.checkout</span>
+
+  <span class="lead-duration duration">0.007</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def depositpaid = true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def additionalneeds = [&quot;Tea&quot;, &quot;BreakFast&quot;]</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def expectedResponse = read('classpath:ResponsePays/CreateBookingResponse.json')</span>
+
+  <span class="lead-duration duration">0.018</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match $ == expectedResponse</span>
+
+  <span class="lead-duration duration">0.007</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def bookingID = $.bookingid</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Retreving User -----------------------------&gt;</div>
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path &quot;booking/&quot; + bookingID</span>
+
+  <span class="lead-duration duration">0.086</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Content-Type = ContentType</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Accept = AcceptVar</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">2.050</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-19">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-19" class="collapse collapsable-details">
+        <pre>23:26:58.605 request:
+2 &gt; GET https://restful-booker.herokuapp.com/booking/2988
+2 &gt; Content-Type: application/json
+2 &gt; Accept: application/json
+2 &gt; Host: restful-booker.herokuapp.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+23:27:00.653 response time in milliseconds: 2046
+2 &lt; 200
+2 &lt; Server: Cowboy
+2 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1713463020&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=aEfrrwsapH5gbtQP2yisQtLBMJhWByebBDnhKW%2F%2BmRA%3D&quot;}]}
+2 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1713463020&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=aEfrrwsapH5gbtQP2yisQtLBMJhWByebBDnhKW%2F%2BmRA%3D
+2 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Content-Length: 183
+2 &lt; Etag: W/&quot;b7-qeh6hML1b6PZXxOXtoZhR68C8wM&quot;
+2 &lt; Date: Thu, 18 Apr 2024 17:57:00 GMT
+2 &lt; Via: 1.1 vegur
+{&quot;firstname&quot;:&quot;Ruben&quot;,&quot;lastname&quot;:&quot;Rutherford&quot;,&quot;totalprice&quot;:956,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2024-04-18&quot;,&quot;checkout&quot;:&quot;2024-04-19&quot;},&quot;additionalneeds&quot;:[&quot;Tea&quot;,&quot;BreakFast&quot;]}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def firstname = createRequestPayload.firstname</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def lastname = createRequestPayload.lastname</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def totalprice = parseInt(createRequestPayload.totalprice)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def checkin = createRequestPayload.bookingdates.checkin</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def checkout = createRequestPayload.bookingdates.checkout</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def depositpaid = true</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def additionalneeds = [&quot;Tea&quot;, &quot;BreakFast&quot;]</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def expectedResponse = read('classpath:ResponsePays/GetBookingResponse.json')</span>
+
+  <span class="lead-duration duration">0.007</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match $ == expectedResponse</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_3_852293507.html">BookingAPITestFeature/Test_Patch_Booking_API.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_233058432.html">@regression</a>
+       <a href="report-tag_4089311534.html">@smoke</a>
+</div>
+
+
+  <span class="lead-duration duration">6.872</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-20">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Test Patch Booking API</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-20" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-21">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-21" class="inner-level collapse collapsable-details ">
+      <div class="step">
+          <div class="comment indention"># Creating User -----------------------------&gt;</div>
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path &quot;booking&quot;</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Content-Type = ContentType</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Accept = AcceptVar</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request createRequestPayload</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">1.620</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-22">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-22" class="collapse collapsable-details">
+        <pre>23:26:58.434 request:
+1 &gt; POST https://restful-booker.herokuapp.com/booking
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Accept: application/json
+1 &gt; Content-Length: 178
+1 &gt; Host: restful-booker.herokuapp.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;firstname&quot;:&quot;Wes&quot;,&quot;lastname&quot;:&quot;West&quot;,&quot;totalprice&quot;:&quot;8851&quot;,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2024-04-18&quot;,&quot;checkout&quot;:&quot;2024-04-19&quot;},&quot;additionalneeds&quot;:[&quot;Tea&quot;,&quot;BreakFast&quot;]}
+
+23:27:00.046 response time in milliseconds: 1611
+1 &lt; 200
+1 &lt; Server: Cowboy
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1713463020&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=aEfrrwsapH5gbtQP2yisQtLBMJhWByebBDnhKW%2F%2BmRA%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1713463020&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=aEfrrwsapH5gbtQP2yisQtLBMJhWByebBDnhKW%2F%2BmRA%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 205
+1 &lt; Etag: W/&quot;cd-KWRthcrBpuUPZWG63bNwureA1u0&quot;
+1 &lt; Date: Thu, 18 Apr 2024 17:57:00 GMT
+1 &lt; Via: 1.1 vegur
+{&quot;bookingid&quot;:3004,&quot;booking&quot;:{&quot;firstname&quot;:&quot;Wes&quot;,&quot;lastname&quot;:&quot;West&quot;,&quot;totalprice&quot;:8851,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2024-04-18&quot;,&quot;checkout&quot;:&quot;2024-04-19&quot;},&quot;additionalneeds&quot;:[&quot;Tea&quot;,&quot;BreakFast&quot;]}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def bookingid = $.bookingid</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match $.bookingid == &quot;#present&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def firstname = createRequestPayload.firstname</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def lastname = createRequestPayload.lastname</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def totalprice = parseInt(createRequestPayload.totalprice)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def checkin = createRequestPayload.bookingdates.checkin</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def checkout = createRequestPayload.bookingdates.checkout</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def depositpaid = true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def additionalneeds = [&quot;Tea&quot;, &quot;BreakFast&quot;]</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def expectedResponse = read('classpath:ResponsePays/CreateBookingResponse.json')</span>
+
+  <span class="lead-duration duration">0.010</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match $ == expectedResponse</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def bookingID = $.bookingid</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Patching/Upating User -----------------------------&gt;</div>
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path &quot;booking/&quot; + bookingID</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Content-Type = ContentType</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Accept = AcceptVar</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Cookie = &quot;token=&quot; + accessToken</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def patchRequestPayload =</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-23">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-23" class="collapse collapsable-details">
+        <pre>{
+&quot;firstname&quot; : &quot;David&quot;,
+&quot;lastname&quot; : &quot;Warner&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request patchRequestPayload</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method patch</span>
+
+  <span class="lead-duration duration">2.026</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-24">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-24" class="collapse collapsable-details">
+        <pre>23:27:00.078 request:
+2 &gt; PATCH https://restful-booker.herokuapp.com/booking/3004
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Accept: application/json
+2 &gt; Cookie: token=b1c86ce41f7d70b
+2 &gt; Content-Length: 41
+2 &gt; Host: restful-booker.herokuapp.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;firstname&quot;:&quot;David&quot;,&quot;lastname&quot;:&quot;Warner&quot;}
+
+23:27:02.102 response time in milliseconds: 2023
+2 &lt; 200
+2 &lt; Server: Cowboy
+2 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1713463022&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=RX4ujJzHJIfbLPibpTAqdk9yd2a3OKOQEr2D4ykgqjk%3D&quot;}]}
+2 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1713463022&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=RX4ujJzHJIfbLPibpTAqdk9yd2a3OKOQEr2D4ykgqjk%3D
+2 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Content-Length: 180
+2 &lt; Etag: W/&quot;b4-EbQxV6zhXyT40gd9xo2tXFCdPiU&quot;
+2 &lt; Date: Thu, 18 Apr 2024 17:57:02 GMT
+2 &lt; Via: 1.1 vegur
+{&quot;firstname&quot;:&quot;David&quot;,&quot;lastname&quot;:&quot;Warner&quot;,&quot;totalprice&quot;:8851,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2024-04-18&quot;,&quot;checkout&quot;:&quot;2024-04-19&quot;},&quot;additionalneeds&quot;:[&quot;Tea&quot;,&quot;BreakFast&quot;]}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def firstname = patchRequestPayload.firstname</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def lastname = patchRequestPayload.lastname</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def totalprice = parseInt(createRequestPayload.totalprice)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def checkin = createRequestPayload.bookingdates.checkin</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def checkout = createRequestPayload.bookingdates.checkout</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def depositpaid = true</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def additionalneeds = [&quot;Tea&quot;, &quot;BreakFast&quot;]</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def expectedResponse = read('classpath:ResponsePays/GetBookingResponse.json')</span>
+
+  <span class="lead-duration duration">0.012</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match $ == expectedResponse</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Retreving User -----------------------------&gt;</div>
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path &quot;booking/&quot; + bookingID</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Content-Type = ContentType</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Accept = AcceptVar</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">3.157</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-25">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-25" class="collapse collapsable-details">
+        <pre>23:27:02.132 request:
+3 &gt; GET https://restful-booker.herokuapp.com/booking/3004
+3 &gt; Content-Type: application/json
+3 &gt; Accept: application/json
+3 &gt; Host: restful-booker.herokuapp.com
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
+3 &gt; Accept-Encoding: gzip,deflate
+
+
+23:27:05.283 response time in milliseconds: 3150
+3 &lt; 200
+3 &lt; Server: Cowboy
+3 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1713463025&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=IMMsFFMV8NiUod08wQ2HzPXlZTaN5DY2pFJ61Y5UEU4%3D&quot;}]}
+3 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1713463025&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=IMMsFFMV8NiUod08wQ2HzPXlZTaN5DY2pFJ61Y5UEU4%3D
+3 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+3 &lt; Connection: keep-alive
+3 &lt; X-Powered-By: Express
+3 &lt; Content-Type: application/json; charset=utf-8
+3 &lt; Content-Length: 180
+3 &lt; Etag: W/&quot;b4-EbQxV6zhXyT40gd9xo2tXFCdPiU&quot;
+3 &lt; Date: Thu, 18 Apr 2024 17:57:05 GMT
+3 &lt; Via: 1.1 vegur
+{&quot;firstname&quot;:&quot;David&quot;,&quot;lastname&quot;:&quot;Warner&quot;,&quot;totalprice&quot;:8851,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2024-04-18&quot;,&quot;checkout&quot;:&quot;2024-04-19&quot;},&quot;additionalneeds&quot;:[&quot;Tea&quot;,&quot;BreakFast&quot;]}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def firstname = patchRequestPayload.firstname</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def lastname = patchRequestPayload.lastname</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def totalprice = parseInt(createRequestPayload.totalprice)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def checkin = createRequestPayload.bookingdates.checkin</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def checkout = createRequestPayload.bookingdates.checkout</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def depositpaid = true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def additionalneeds = [&quot;Tea&quot;, &quot;BreakFast&quot;]</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def expectedResponse = read('classpath:ResponsePays/GetBookingResponse.json')</span>
+
+  <span class="lead-duration duration">0.007</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match $ == expectedResponse</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_4_811649382.html">BookingAPITestFeature/Test_Update_Booking_API.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_233058432.html">@regression</a>
+       <a href="report-tag_4089311534.html">@smoke</a>
+</div>
+
+
+  <span class="lead-duration duration">6.703</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-26">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Test Update Booking API</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-26" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-27">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-27" class="inner-level collapse collapsable-details ">
+      <div class="step">
+          <div class="comment indention"># Creating User -----------------------------&gt;</div>
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path &quot;booking&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Content-Type = ContentType</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Accept = AcceptVar</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request createRequestPayload</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">2.328</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-28">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-28" class="collapse collapsable-details">
+        <pre>23:27:00.695 request:
+1 &gt; POST https://restful-booker.herokuapp.com/booking
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Accept: application/json
+1 &gt; Content-Length: 182
+1 &gt; Host: restful-booker.herokuapp.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;firstname&quot;:&quot;Lazaro&quot;,&quot;lastname&quot;:&quot;Thiel&quot;,&quot;totalprice&quot;:&quot;2807&quot;,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2024-04-18&quot;,&quot;checkout&quot;:&quot;2024-04-19&quot;},&quot;additionalneeds&quot;:[&quot;Tea&quot;,&quot;BreakFast&quot;]}
+
+23:27:03.019 response time in milliseconds: 2322
+1 &lt; 200
+1 &lt; Server: Cowboy
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1713463023&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=ZO6X7eDoeH2TTFOX43C%2B1EJG8JKlwaeZ3TPVV7rXv9I%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1713463023&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=ZO6X7eDoeH2TTFOX43C%2B1EJG8JKlwaeZ3TPVV7rXv9I%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 209
+1 &lt; Etag: W/&quot;d1-Se9NsBUtMz/63hfyq0kxEXNrd08&quot;
+1 &lt; Date: Thu, 18 Apr 2024 17:57:03 GMT
+1 &lt; Via: 1.1 vegur
+{&quot;bookingid&quot;:3026,&quot;booking&quot;:{&quot;firstname&quot;:&quot;Lazaro&quot;,&quot;lastname&quot;:&quot;Thiel&quot;,&quot;totalprice&quot;:2807,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2024-04-18&quot;,&quot;checkout&quot;:&quot;2024-04-19&quot;},&quot;additionalneeds&quot;:[&quot;Tea&quot;,&quot;BreakFast&quot;]}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def bookingid = $.bookingid</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match $.bookingid == &quot;#present&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def firstname = createRequestPayload.firstname</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def lastname = createRequestPayload.lastname</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def totalprice = parseInt(createRequestPayload.totalprice)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def checkin = createRequestPayload.bookingdates.checkin</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def checkout = createRequestPayload.bookingdates.checkout</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def depositpaid = true</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def additionalneeds = [&quot;Tea&quot;, &quot;BreakFast&quot;]</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def expectedResponse = read('classpath:ResponsePays/CreateBookingResponse.json')</span>
+
+  <span class="lead-duration duration">0.008</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match $ == expectedResponse</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def bookingID = $.bookingid</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Updating User -----------------------------&gt;</div>
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path &quot;booking/&quot; + bookingID</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Content-Type = ContentType</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Accept = AcceptVar</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Cookie = &quot;token=&quot; + accessToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set createRequestPayload.firstname = &quot;Ram&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set createRequestPayload.lastname =  &quot;Sharma&quot;</span>
+
+  <span class="lead-duration duration">0.007</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set createRequestPayload.totalprice = 245</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request createRequestPayload</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method put</span>
+
+  <span class="lead-duration duration">3.496</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-29">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-29" class="collapse collapsable-details">
+        <pre>23:27:03.057 request:
+2 &gt; PUT https://restful-booker.herokuapp.com/booking/3026
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Accept: application/json
+2 &gt; Cookie: token=d8332da60acf65f
+2 &gt; Content-Length: 177
+2 &gt; Host: restful-booker.herokuapp.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;firstname&quot;:&quot;Ram&quot;,&quot;lastname&quot;:&quot;Sharma&quot;,&quot;totalprice&quot;:245,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2024-04-18&quot;,&quot;checkout&quot;:&quot;2024-04-19&quot;},&quot;additionalneeds&quot;:[&quot;Tea&quot;,&quot;BreakFast&quot;]}
+
+23:27:06.550 response time in milliseconds: 3492
+2 &lt; 200
+2 &lt; Server: Cowboy
+2 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1713463026&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=VWm7sy%2FZWF%2BfD%2FC195UrAXw6w%2FMrFjH1Xo3xq3pJIC4%3D&quot;}]}
+2 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1713463026&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=VWm7sy%2FZWF%2BfD%2FC195UrAXw6w%2FMrFjH1Xo3xq3pJIC4%3D
+2 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Content-Length: 177
+2 &lt; Etag: W/&quot;b1-xuQ6Z2ZtoXwf7ZpuKphhiekGwEE&quot;
+2 &lt; Date: Thu, 18 Apr 2024 17:57:06 GMT
+2 &lt; Via: 1.1 vegur
+{&quot;firstname&quot;:&quot;Ram&quot;,&quot;lastname&quot;:&quot;Sharma&quot;,&quot;totalprice&quot;:245,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2024-04-18&quot;,&quot;checkout&quot;:&quot;2024-04-19&quot;},&quot;additionalneeds&quot;:[&quot;Tea&quot;,&quot;BreakFast&quot;]}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def firstname = createRequestPayload.firstname</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def lastname = createRequestPayload.lastname</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def totalprice = parseInt(createRequestPayload.totalprice)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def checkin = createRequestPayload.bookingdates.checkin</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def checkout = createRequestPayload.bookingdates.checkout</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def depositpaid = true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def additionalneeds = [&quot;Tea&quot;, &quot;BreakFast&quot;]</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def expectedResponse = read('classpath:ResponsePays/GetBookingResponse.json')</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match $ == expectedResponse</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Retreving User -----------------------------&gt;</div>
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path &quot;booking/&quot; + bookingID</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Content-Type = ContentType</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Accept = AcceptVar</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.828</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-30">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-30" class="collapse collapsable-details">
+        <pre>23:27:06.562 request:
+3 &gt; GET https://restful-booker.herokuapp.com/booking/3026
+3 &gt; Content-Type: application/json
+3 &gt; Accept: application/json
+3 &gt; Host: restful-booker.herokuapp.com
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
+3 &gt; Accept-Encoding: gzip,deflate
+
+
+23:27:07.388 response time in milliseconds: 825
+3 &lt; 200
+3 &lt; Server: Cowboy
+3 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1713463027&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=eLZUjsvdLjGaQw%2F2HsANtc1XzcAjHeLVPxio%2FxvkM1s%3D&quot;}]}
+3 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1713463027&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=eLZUjsvdLjGaQw%2F2HsANtc1XzcAjHeLVPxio%2FxvkM1s%3D
+3 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+3 &lt; Connection: keep-alive
+3 &lt; X-Powered-By: Express
+3 &lt; Content-Type: application/json; charset=utf-8
+3 &lt; Content-Length: 177
+3 &lt; Etag: W/&quot;b1-xuQ6Z2ZtoXwf7ZpuKphhiekGwEE&quot;
+3 &lt; Date: Thu, 18 Apr 2024 17:57:07 GMT
+3 &lt; Via: 1.1 vegur
+{&quot;firstname&quot;:&quot;Ram&quot;,&quot;lastname&quot;:&quot;Sharma&quot;,&quot;totalprice&quot;:245,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2024-04-18&quot;,&quot;checkout&quot;:&quot;2024-04-19&quot;},&quot;additionalneeds&quot;:[&quot;Tea&quot;,&quot;BreakFast&quot;]}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-31">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-31" class="collapse collapsable-details">
+        <pre>23:27:07.391 [print] {
+  &quot;firstname&quot;: &quot;Ram&quot;,
+  &quot;lastname&quot;: &quot;Sharma&quot;,
+  &quot;totalprice&quot;: 245,
+  &quot;depositpaid&quot;: true,
+  &quot;bookingdates&quot;: {
+    &quot;checkin&quot;: &quot;2024-04-18&quot;,
+    &quot;checkout&quot;: &quot;2024-04-19&quot;
+  },
+  &quot;additionalneeds&quot;: [
+    &quot;Tea&quot;,
+    &quot;BreakFast&quot;
+  ]
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def firstname = createRequestPayload.firstname</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def lastname = createRequestPayload.lastname</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def totalprice = parseInt(createRequestPayload.totalprice)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def checkin = createRequestPayload.bookingdates.checkin</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def checkout = createRequestPayload.bookingdates.checkout</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def depositpaid = true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def additionalneeds = [&quot;Tea&quot;, &quot;BreakFast&quot;]</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def expectedResponse = read('classpath:ResponsePays/GetBookingResponse.json')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match $ == expectedResponse</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+    "firstname" : "Jack",
+    "lastname" : "Reacher",
+    "totalprice" : 565,
+    "depositpaid" : true,
+    "bookingdates" : {
+        "checkin" : "2023-01-01",
+        "checkout" : "2024-01-01"
+    },
+    "additionalneeds" : ["Tea","BreakFast"]
+}
